@@ -8,32 +8,32 @@ const insertData = async () => {
   await db.dropDatabase()
 
   const user1 = new User({
-    firstName: 'Bruno',
-    lastName: 'Galvao',
+    first_name: 'Bruno',
+    last_name: 'Galvao',
     email: 'root@super.gmail.com',
     password_digest: await bcrypt.hash('!a$ecureP@ssw0Rd55!', 11)
   })
   await user1.save()
 
   const user2 = new User({
-    firstName: 'Bianca',
-    lastName: 'Gal',
+    first_name: 'Bianca',
+    last_name: 'Gal',
     email: 'b.anca@super.gmail.com',
     password_digest: await bcrypt.hash('!$h0pp3R1', 11)
   })
   await user2.save()
 
   const user3 = new User({
-    firstName: 'Elizabeth',
-    lastName: 'Rodriguez',
+    first_name: 'Elizabeth',
+    last_name: 'Rodriguez',
     email: 'e.ro@super.gmail.com',
     password_digest: await bcrypt.hash('!$eller4Lif3', 11)
   })
   await user3.save()
 
   const user4 = new User({
-    firstName: 'Derek',
-    lastName: 'Johns',
+    first_name: 'Derek',
+    last_name: 'Johns',
     email: 'derek@super.gmail.com',
     password_digest: await bcrypt.hash('L0v32!p4int', 11)
   })
