@@ -9,7 +9,7 @@
 
 ## Project Description
 
-[enCapsule] is a mobile app that enables users to track items in their closet. The goal is to empower our users to reduce waste by rewearing items in their closet more frequently, which becomes much more possible when they use enCapsule to conveniently view all of the garments they own. Once a user signs up, they will have access to their virtual closet, where they can add an item by uploading a photo of their garment and adding details about the item. Once it’s saved, the item is now available to view in their virtual closet!
+enCapsule is a mobile app that enables users to track items in their closet. The goal is to empower our users to reduce waste by rewearing items in their closet more frequently, which becomes much more possible when they use enCapsule to conveniently view all of the garments they own. Once a user signs up, they will have access to their virtual closet, where they can add an item by uploading a photo of their garment and adding details about the item. Once it’s saved, the item is now available to view in their virtual closet!
 
 ## Team Expectations
 
