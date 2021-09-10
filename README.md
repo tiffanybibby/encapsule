@@ -1,6 +1,6 @@
 # [enCapsule](https://github.com/tiffanybibby/encapsule)
 
-## Group members:
+## Group Members:
 
 ##### [Tiffany](https://github.com/tiffanybibby)
 ##### [Nia-Emani](https://github.com/Nia-Emani)
