@@ -13,7 +13,7 @@
 
 ## Team Expectations
 
-[Team Google Doc] (https://docs.google.com/document/d/1SQGBviZd51mA6Cb_XTZooauhAc15SnfYlVYAmrlBxnQ/edit)
+[Team Google Doc](https://docs.google.com/document/d/1SQGBviZd51mA6Cb_XTZooauhAc15SnfYlVYAmrlBxnQ/edit)
 
 ## Wireframes
 ![Wireframe](https://www.figma.com/file/pFIunalmqZk7Qq25NZak7q/Capsule-Wardrobe?node-id=0%3A1)
