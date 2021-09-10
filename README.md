@@ -16,7 +16,9 @@
 [Team Google Doc](https://docs.google.com/document/d/1SQGBviZd51mA6Cb_XTZooauhAc15SnfYlVYAmrlBxnQ/edit)
 
 ## Wireframes
-https://www.figma.com/file/pFIunalmqZk7Qq25NZak7q/Capsule-Wardrobe?node-id=0%3A1
+
+[Wireframe](https://www.figma.com/file/pFIunalmqZk7Qq25NZak7q/Capsule-Wardrobe?node-id=0%3A1)
+![Wireframe](https://github.com/tiffanybibby/encapsule/blob/main/assets/wireframe.png?raw=true)
 
 ## Component Hierarchy
 ![Component Hierarchy](https://github.com/tiffanybibby/encapsule/blob/main/assets/component-hierarchy.png?raw=true)
