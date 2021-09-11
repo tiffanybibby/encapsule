@@ -8,8 +8,8 @@ const Nav = () => {
       <div className="nav">
         <NavLink className="logo" to="/">enCapsule</NavLink>
         <div className="links">
-          <NavLink className="link" to="/signup">sign up</NavLink>
-          <NavLink className="link" to="/signin">sign in</NavLink>
+          <NavLink className="link" to="/sign-up">sign up</NavLink>
+          <NavLink className="link" to="/sign-in">sign in</NavLink>
         </div>
       </div>
     </nav>
