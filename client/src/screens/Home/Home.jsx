@@ -11,18 +11,18 @@ const Home = () => {
           <h2 className='digitize-text'>Digitize you wardrobe in 3 simple steps!</h2>
           <div className='step-1'>
             <h2 className='step-numbers'>1</h2>
-            <img className='step-images' src="https://lh3.googleusercontent.com/oq1eDoSoZV_c0pjIhDhklWf9TmjtvWBDkCo68SBXN8yjD8JW15YWYdmEvvzXpUk_5wdRx8q-EwBpj3IWEH3kkAn98tzkTezlMiByetaxSGwcqwSZx3PqUHn9_ZM6GyFCK0Vb7B3BarE=s250-p-k" alt='Person taking a photo of denim jacket' />
+            <img className='step-icon' src="https://lh3.googleusercontent.com/oq1eDoSoZV_c0pjIhDhklWf9TmjtvWBDkCo68SBXN8yjD8JW15YWYdmEvvzXpUk_5wdRx8q-EwBpj3IWEH3kkAn98tzkTezlMiByetaxSGwcqwSZx3PqUHn9_ZM6GyFCK0Vb7B3BarE=s250-p-k" alt='Person taking a photo of denim jacket' />
             <h3 className='step-headings'>Take a photo</h3>
             <p className='step-descriptions'>Capture an image of your garment to be included in your virtual closet.</p>
           </div>
           <div className='step-2'>
             <h2 className='step-numbers'>2</h2>
-            <img className='step-images' src="https://lh3.googleusercontent.com/Oy0XJ7YTMagucznQcGoJ8J1gA3zjwxqZxxFV9c5AI9zfzeEEBRa3orIN3id997tJf7zVKv48c38R-Ydtko0KfzgaT4jaNSFekOGTnFg5ZpHNBN7DWSdotJIQv02DTdIg5KL4BaJ2498=s250-p-k" alt='Person typing on phone' /><h3 className='step-headings'>Add details</h3>
+            <img className='step-icon' src="https://lh3.googleusercontent.com/Oy0XJ7YTMagucznQcGoJ8J1gA3zjwxqZxxFV9c5AI9zfzeEEBRa3orIN3id997tJf7zVKv48c38R-Ydtko0KfzgaT4jaNSFekOGTnFg5ZpHNBN7DWSdotJIQv02DTdIg5KL4BaJ2498=s250-p-k" alt='Person typing on phone' /><h3 className='step-headings'>Add details</h3>
             <p className='step-descriptions'>Choose a category, color, and more so you can easily find your items later!</p>
           </div>
           <div className='step-3'>
             <h2 className='step-numbers'>3</h2>
-            <img className='step-images' src="https://lh3.googleusercontent.com/S6GYxrldqIpqNhfpATTcUD0kSiRH3yA4ONqKLt1h4xgu0MYl7orKAKKFrO4URcbHbSwpAlB1G8w0pMKH-X0rCH0h4KG5sVEJIJQMRbnDVDuylBY5pgkQ1S79-3YR9KFBD4ZKH_nZjYs=s250-p-k" alt='Woman browsing on phone' />
+            <img className='step-icon' src="https://lh3.googleusercontent.com/S6GYxrldqIpqNhfpATTcUD0kSiRH3yA4ONqKLt1h4xgu0MYl7orKAKKFrO4URcbHbSwpAlB1G8w0pMKH-X0rCH0h4KG5sVEJIJQMRbnDVDuylBY5pgkQ1S79-3YR9KFBD4ZKH_nZjYs=s250-p-k" alt='Woman browsing on phone' />
             <h3 className='step-headings'>Browse your closet</h3>
             <p className='step-descriptions'><i>Et Voila!</i> Now you can put looks together from your wardrobe, no matter where you’re located!</p>
           </div>
