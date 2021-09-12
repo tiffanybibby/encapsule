@@ -1,4 +1,4 @@
-import Item from '../models/Item.js'
+import Item from '../models/item.js'
 
 export const getItems = async (req, res) => {
   try {
@@ -13,7 +13,7 @@ export const getItems = async (req, res) => {
 export const getItem = async (req, res) => {
   try {
     const { id } = req.params
-    const item = await Item.findById(id).populate('userId')
+    const item = await Item.findById(id)
     if (item) {
       return res.json(item)
     }
