@@ -5,7 +5,7 @@ const SignIn = () => {
   return (
     <Layout>
       <div className='sign-in'>
-
+      Sign-in
       </div>
     </Layout>
   )
