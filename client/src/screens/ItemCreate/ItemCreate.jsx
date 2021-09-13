@@ -9,8 +9,7 @@ const ItemCreate = (props) => {
   const [item, setItem] = useState({
     category: '',
     season: '',
-//    notes: '',
-//    uploadImage: '',
+    uploadImage: '',
     color: ''
 })
 
@@ -18,10 +17,10 @@ const ItemCreate = (props) => {
 
   const handleChange = (e) => {
     console.log(props)
- //   const { ??name??, value } = e.target
+    const { ??name??, value } = e.target
       setItem({
- //     ...item,
- //      [??name??]: value
+        ...item,
+      [??name??]: value
     })
 }
 
@@ -69,7 +68,6 @@ if (isCreated) {
           placeholder='Notes'
           value={item.notes}
           name='notes'
-//          required
           onChange={handleChange}
         />
         <input
@@ -77,7 +75,7 @@ if (isCreated) {
           placeholder='Image Link'
           value={item.imgURL}
           name='imgURL'
-//         required
+          required
           onChange={handleChange}
         />
         <button type='submit' className="submit-button">Submit</button>
