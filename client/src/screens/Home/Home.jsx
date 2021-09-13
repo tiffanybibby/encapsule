@@ -11,7 +11,7 @@ const Home = () => {
           <h2 className='digitize-text'>Digitize you wardrobe in 3 simple steps!</h2>
           <div className='step-1'>
             <h2 className='step-numbers'>1</h2>
-            <img className='step-icon' src="https://lh3.googleusercontent.com/oq1eDoSoZV_c0pjIhDhklWf9TmjtvWBDkCo68SBXN8yjD8JW15YWYdmEvvzXpUk_5wdRx8q-EwBpj3IWEH3kkAn98tzkTezlMiByetaxSGwcqwSZx3PqUHn9_ZM6GyFCK0Vb7B3BarE=s250-p-k" alt='Person taking a photo of denim jacket' />
+            <img className='step-icon' src="https://lh3.googleusercontent.com/oq1eDoSoZV_c0pjIhDhklWf9TmjtvWBDkCo68SBXN8yjD8JW15YWYdmEvvzXpUk_5wdRx8q-EwBpj3IWEH3kkAn98tzkTezlMiByetaxSGwcqwSZx3PqUHn9_ZM6GyFCK0Vb7B3BarE=s250-p-k" alt='Person taking a pic of denim jacket' />
             <h3 className='step-headings'>Take a photo</h3>
             <p className='step-descriptions'>Capture an image of your garment to be included in your virtual closet.</p>
           </div>
@@ -33,7 +33,7 @@ const Home = () => {
         <div className='marketing-container'>
           <div className='why-section'>
             <img className='why-img' src="https://lh3.googleusercontent.com/H0D_mfd5UXN3StgzKajBNWuIrpThnRRUhDdftEVUQl2ImoauKKiI2CWwHTPoDEb4ff9O10KqZ64ac4LhZm6yj5M_X8vDsXQxrgYMjuqnabdyG9G8bVP86bh9FrDFXLylKFJJEBEQ6DU=s250-p-k" alt='Our Why' />
-            <p className='why-description'>In 2017, 85% of all textitles were thrown away in the United States. <a className='citation-1'>1</a>  By 2030, global textile waste is expected to exceed 134 million tons per year. <a className='citation-2'>2</a>  Our mission is to help drastically decrease that number by empowering our users to reduce their waste by rewearing items in their wardrobe more frequently, and to invest in sustainable, durable clothing.</p>
+            <p className='why-description'>In 2017, 85% of all textitles were thrown away in the United States. <a href className='citation-1'>1</a>  By 2030, global textile waste is expected to exceed 134 million tons per year. <a href className='citation-2'>2</a>  Our mission is to help drastically decrease that number by empowering our users to reduce their waste by rewearing items in their wardrobe more frequently, and to invest in sustainable, durable clothing.</p>
           </div>
           <h1 className='slogan'>Your wardrobe, in the palm of your hands.</h1>
           <p className='final-sell'>The ability to access all of the items in your closet, directly from your mobile devices, means you’re less likely to spend money on items you already own that may be hiding in the back of your closet.</p>
