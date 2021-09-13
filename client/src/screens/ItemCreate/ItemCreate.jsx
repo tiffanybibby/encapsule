@@ -11,7 +11,8 @@ const ItemCreate = (props) => {
     imgURL: '',
     category: '',
     season: '',
-    color: ''
+    color: '',
+    notes: ''
 })
 
   const [isCreated, setCreated] = useState(false)
