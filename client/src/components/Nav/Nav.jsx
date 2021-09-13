@@ -1,8 +1,26 @@
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
-const Nav = () => {
+const authenticatedOptions = (
+    <>
+        <NavLink className="link" to="/item-create">Add Item</NavLink>
+        <NavLink className="link" to="/sign-out">Sign Out</NavLink>
+    </>
+)
+const unauthenticatedOptions = (
+    <>
+        <NavLink className="link" to="/sign-up">Sign Up</NavLink>
+        <NavLink className="link" to="/sign-in">Sign In</NavLink>
+    </>
+)
+// const alwaysOptions = (
+//     <>
+//         <NavLink className="link" to="/items">Closet</NavLink>
+//     </>
+// )
 
+
+const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
@@ -10,6 +28,10 @@ const Nav = () => {
         <div className="links">
           <NavLink className="link" to="/sign-up">sign up</NavLink>
           <NavLink className="link" to="/sign-in">sign in</NavLink>
+          {user && <div className="link welcome">{user.username}'s Closet</div>}
+          {/* {alwaysOptions} */}
+          {user ? authenticatedOptions : unauthenticatedOptions}
+
         </div>
       </div>
     </nav>
