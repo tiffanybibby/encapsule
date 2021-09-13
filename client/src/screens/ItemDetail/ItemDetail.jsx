@@ -31,11 +31,11 @@ const ItemDetail = (props) => {
           alt={item.name}
         />
         <div className='detail'>
-          <div className='name'>{item.name}</div>
-          <div className='category'>{item.category}</div>
-          <div className='season'>{item.season}</div>
-          <div className='color'>{item.color}</div>
-          <div className='notes'>{item.notes}</div>
+          <p className='name-p'>Name</p><div className='name'>{item.name}</div>
+          <p className='category-p'>Category</p><div className='category'>{item.category}</div>
+          <p className='season-p'>Season</p><div className='season'>{item.season}</div>
+          <p className='color-p'>Color</p><div className='color'>{item.color}</div>
+          <p className='notes-p'>Notes</p><div className='notes'>{item.notes}</div>
           <div className='button-container'>
             <Link className='edit-button' to={`/items/${item._id}/edit`}>
               Edit
