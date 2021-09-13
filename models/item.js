@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const Item = new Schema(
   {
+    name: { type: String, required: true },
     imgURL: { type: String, required: true },
     category: { type: String, required: true },
     season: { type: String, required: true },

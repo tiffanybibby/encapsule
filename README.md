@@ -1,11 +1,7 @@
 # [enCapsule](https://github.com/tiffanybibby/encapsule)
 
 ## Group Members:
-
-##### [Tiffany](https://github.com/tiffanybibby)
-##### [Nia-Emani](https://github.com/Nia-Emani)
-##### [Daria](https://github.com/DariaKrestina)
-##### [Rachel](https://github.com/texasrachel)
+##### [Tiffany](https://github.com/tiffanybibby), [Nia-Emani](https://github.com/Nia-Emani), [Daria](https://github.com/DariaKrestina), & [Rachel](https://github.com/texasrachel)
 
 ## Project Description
 
@@ -15,12 +11,10 @@ enCapsule is a mobile app that enables users to track items in their closet. The
 
 [Team Google Doc](https://docs.google.com/document/d/1SQGBviZd51mA6Cb_XTZooauhAc15SnfYlVYAmrlBxnQ/edit)
 
-## Wireframes
-
-[Wireframe](https://www.figma.com/file/pFIunalmqZk7Qq25NZak7q/Capsule-Wardrobe?node-id=0%3A1)
+## [Wireframe](https://www.figma.com/file/pFIunalmqZk7Qq25NZak7q/Capsule-Wardrobe?node-id=0%3A1)
 ![Wireframe](https://github.com/tiffanybibby/encapsule/blob/main/assets/wireframe.png?raw=true)
 
-## Component Hierarchy
+## [Component Hierarchy](https://whimsical.com/component-heirarchy-BLiyq2NDW73wuaETU6DPhz)
 ![Component Hierarchy](https://github.com/tiffanybibby/encapsule/blob/main/assets/component-hierarchy.png?raw=true)
 
 ## Schema
@@ -28,13 +22,13 @@ enCapsule is a mobile app that enables users to track items in their closet. The
 
 ### MVP
 
-- [  ] Minimum of 6 components
-- [  ] Full CRUD utilizing Express, Mongoose, MongoDB
-- [  ] Authentication
-- [  ] Use of CSS styling/Styled components/Component library
-- [  ] Use [GitHub Project Board](https://github.com/tiffanybibby/encapsule/projects)
-- [  ] Implement responsive design for mobile
-- [  ] Deployed
+- Minimum of 6 components
+- Full CRUD utilizing Express, Mongoose, MongoDB
+- Authentication
+- Use of CSS styling/Styled components/Component library
+- Use [GitHub Project Board](https://github.com/tiffanybibby/encapsule/projects)
+- Implement responsive design for mobile
+- Deployed
 
-##Team Astronaut
+### Team Astronaut
 ![Team Astronaut](https://github.com/tiffanybibby/encapsule/blob/main/assets/astro.png?raw=true)
