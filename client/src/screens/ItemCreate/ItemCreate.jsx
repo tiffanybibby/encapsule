@@ -17,10 +17,10 @@ const ItemCreate = (props) => {
 
   const handleChange = (e) => {
     console.log(props)
-    const { ??name??, value } = e.target
+    const { name, value } = e.target
       setItem({
         ...item,
-      [??name??]: value
+      [name]: value
     })
 }
 
