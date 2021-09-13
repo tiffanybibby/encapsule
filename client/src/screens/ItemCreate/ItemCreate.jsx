@@ -7,9 +7,10 @@ import { createItem } from '../../services/items'
 const ItemCreate = (props) => {
 
   const [item, setItem] = useState({
+    name: '',
+    imgURL: '',
     category: '',
     season: '',
-    uploadImage: '',
     color: ''
 })
 
@@ -31,20 +32,34 @@ const ItemCreate = (props) => {
 }
 
 if (isCreated) {
-    return <Redirect to={`/`} />
+    return <Redirect to={`/items`} />
 }
   return (
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
       <input
+          className="input-name"
+          placeholder='Name'
+          value={item.name}
+          name='name'
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+      <select
           className="input-category"
           placeholder='Category'
           value={item.category}
           name='category'
           required
-          autoFocus
           onChange={handleChange}
-        />
+        >
+        <option value='choose-category' selected>Choose category</option>
+        <option value='tops'>Tops</option>
+        <option value='skirts'>Skirts</option>
+        <option value='pants'>Pants</option>
+        <option value='dresses'>Dresses</option>
+        </select>
         <input
           className="input-color"
           placeholder='Color'
@@ -62,20 +77,20 @@ if (isCreated) {
           required
           onChange={handleChange}
         />
+        <input
+          className="input-image-link"
+          placeholder='Add image link'
+          value={item.imgURL}
+          name='imgURL'
+          required
+          onChange={handleChange}
+        />
         <textarea
           className="textarea-notes"
           rows={10}
           placeholder='Notes'
           value={item.notes}
           name='notes'
-          onChange={handleChange}
-        />
-        <input
-          className="input-image-link"
-          placeholder='Image Link'
-          value={item.imgURL}
-          name='imgURL'
-          required
           onChange={handleChange}
         />
         <button type='submit' className="submit-button">Submit</button>
