@@ -55,7 +55,7 @@ if (isCreated) {
           required
           onChange={handleChange}
         >
-        <option value='choose-category' selected>Choose category</option>
+        <option value='' defaultValue>Choose category</option>
         <option value='tops'>Tops</option>
         <option value='skirts'>Skirts</option>
         <option value='pants'>Pants</option>

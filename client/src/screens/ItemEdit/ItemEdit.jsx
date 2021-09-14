@@ -12,6 +12,7 @@ const ItemEdit = (props) => {
     season: '',
     imgURL: '',
     notes: '',
+    _id: ''
   })
 
   const [isUpdated, setUpdated] = useState(false)
@@ -34,29 +35,25 @@ const ItemEdit = (props) => {
   }
 
   const handleSubmit = async (e) => {
-    e.preDefault()
+    e.preventDefault()
     const updated = await updateItem(id, item)
     setUpdated(updated)
   }
 
   if (isUpdated) {
-    return <Redirect to={`/items/${id}`} />
+    return <Redirect to={`/items/${item._id}`} /> 
   }
 
   return (
     <Layout user={props.user}>
       <div className='item-edit'>
         <div className='image-container'>
-          <form onSubmit={handleSubmit}>
-            <input
-              className='edit-input-image-link'
-              placeholder='Image Link'
-              value={item.imgURL}
-              name='imgURL'
-              required
-              onChange={handleChange}
-            />
-          </form>
+        <img
+          className='item-detail-image'
+          src={item.imgURL}
+          alt={item.name}
+        />
+          
         </div>
         <form className='edit-form' onSubmit={handleSubmit}>
           <input
@@ -76,12 +73,20 @@ const ItemEdit = (props) => {
           required
           onChange={handleChange}
           >
-          <option value='choose-category' selected>Choose category</option>
+          <option value='choose-category' defaultValue>Choose category</option>
           <option value='tops'>Tops</option>
           <option value='skirts'>Skirts</option>
           <option value='pants'>Pants</option>
           <option value='dresses'>Dresses</option>
           </select>
+          <input
+            className="input-season"
+            placeholder='Season'
+            value={item.season}
+            name='season'
+            required
+            onChange={handleChange}
+            />
           <input
           className="input-color"
           placeholder='Color'
@@ -91,17 +96,9 @@ const ItemEdit = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
-          className="input-season"
-          placeholder='Season'
-          value={item.season}
-          name='season'
-          required
-          onChange={handleChange}
-          />
           <input
           className="input-image-link"
-          placeholder='Add image link'
+          placeholder='Change image link'
           value={item.imgURL}
           name='imgURL'
           required
