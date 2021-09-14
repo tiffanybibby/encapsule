@@ -26,19 +26,24 @@ const handleChange = (event) =>
 const onSignUp = async (event) => {
     event.preventDefault()
     const { setUser } = props
-    try {
+  try {
+    if (password === passwordConfirmation) { 
       const user = await signUp(form)
       setUser(user)
       history.push('/items')
+    } else {
+      throw 'Sign Up Details Invalid'
+      }
     } catch (error) {
       console.error(error)
       setForm({
         first_name: '',
         last_name: '',
+        email: '',
         password: '',
         passwordConfirmation: '',
         isError: true,
-        errorMsg: 'Sign Up Details Invalid',
+        errorMsg: 'Sign Up Details Invalid!',
       })
     }
   }
@@ -46,10 +51,13 @@ const onSignUp = async (event) => {
 const renderError = () => {
     const toggleForm = form.isError ? 'danger' : ''
     if (form.isError) {
-      return (
-        <button type='submit' className={toggleForm}>
-          {/* {form.errorMsg} */}
-        </button>
+      return ( 
+      <>
+        <button type='submit'>Sign Up</button>
+        <p className={toggleForm}>
+          {form.errorMsg}
+        </p>
+      </>
       )
     } else {
       return <button type='submit'>Sign Up</button>
