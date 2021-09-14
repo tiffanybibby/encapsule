@@ -9,7 +9,7 @@ const ItemEdit = (props) => {
     name: '',
     category: '',
     color: '',
-    season: ''
+    season: '',
     imgURL: '',
     notes: '',
   })
