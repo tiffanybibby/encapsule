@@ -1,12 +1,30 @@
 .nav {
-
+  font-size: 20px;
+  box-shadow: 0px 0px 3px 2px #6AA6A3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 .logo {
-
+  font-family: 'Poiret One', cursive;
+  font-size: 48px;
+  text-decoration: none !important;
+  color: black;
+  margin: auto;
+  padding-left:100px
 }
 .links {
+  justify-content: space-between;
 
 }
 .link {
-  
+  text-decoration: none !important;
+  color: black;
+  padding-right: 20px ;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+
 }
