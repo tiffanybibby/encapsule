@@ -1,63 +1,84 @@
 .home {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  font-family: Catamaran, sans-serif;
 }
 .hero-image {
-
+  width: 70%;
 }
 .instructions-container {
-
+  display: flex;
+  width: 70%;
 }
 .digitize-text {
-
-}
-.step-1 {
-
+  font-size: 36px;
 }
 .step-numbers {
-
+  font-family: Poiret One, sans serif;
+  font-size: 50px;
+  color: #6aa6a3;
 }
-.step-icon {
-
+.number-and-icon {
+  display: flex;
+  justify-content: space-evenly;
 }
 .step-headings {
-
+  font-size: 26px;
+  margin-bottom: auto;
 }
 .step-descriptions {
-
-}
-.step-2 {
-
-}
-.step-3 {
-
+  font-size: 18px;
+  width: 75%;
 }
 .start-button {
-
+  background-color: black;
+  color: white;
+  font-family: "Catamaran";
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 10px;
+  width: 250px;
+  margin: 60px;
+  box-shadow: 3px 3px 8px grey;
 }
-.marketing-container {
-
-}
-.why-section {
-
-}
-.why-description {
-
-}
-.citation-1 {
-
-}
-.citation-2 {
-
-}
-.slogan {
-
-}
-.final-sell {
-
-}
-.final-ask {
-
-}
-.encapsulated-button {
+/*.step-1 {
   
-}
+ }
+ .step-icon {
+  
+ }
+ .step-2 {
+  
+ }
+ .step-3 {
+  
+ }
+ .marketing-container {
+  
+ }
+ .why-section {
+  
+ }
+ .why-description {
+  
+ }
+ .citation-1 {
+  
+ }
+ .citation-2 {
+  
+ }
+ .slogan {
+  
+ }
+ .final-sell {
+  
+ }
+ .final-ask {
+  
+ }
+ .encapsulated-button {
+  } */
