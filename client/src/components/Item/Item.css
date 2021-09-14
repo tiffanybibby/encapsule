@@ -1,5 +1,4 @@
 .item {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,22 +40,4 @@
       margin: 15px;
       padding: 10px;
   }
-=======
-
-}
-.item-image {
-
-}
-.item-category {
-
-}
-.item-color {
-
-}
-.item-season {
-
-}
-.item-notes {
-  
->>>>>>> 2080a80c637abba862d0bd2b02962eb7234b6e20
 }
