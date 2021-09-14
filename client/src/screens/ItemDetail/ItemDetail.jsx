@@ -3,11 +3,13 @@ import './ItemDetail.css'
 import { Layout } from '../../components'
 import { getItem, deleteItem } from '../../services/items'
 import { useParams, Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 const ItemDetail = (props) => {
   const [item, setItem] = useState(null)
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
+  const history = useHistory()
 
   useEffect(() => {
     const fetchItem = async () => {
@@ -42,7 +44,10 @@ const ItemDetail = (props) => {
             </Link>
             <button
               className='delete-button'
-              onClick={() => deleteItem(item._id)}
+              onClick={() => {
+                deleteItem(item._id)
+                history.push('/items')
+              }}
             >
               Delete
             </button>
