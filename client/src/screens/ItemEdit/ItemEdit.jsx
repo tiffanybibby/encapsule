@@ -47,17 +47,18 @@ const ItemEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className='item-edit'>
-        <div className='image-container'>
+        <div className='image-edit-container'>
         <img
-          className='item-detail-image'
+          className='item-edit-image'
           src={item.imgURL}
           alt={item.name}
         />
           
         </div>
+        <div className='item-edit-container'>
         <form className='edit-form' onSubmit={handleSubmit}>
           <input
-            className='input-name'
+            className='edit-input-name'
             placeholder='Name'
             value={item.name}
             name='name'
@@ -117,6 +118,7 @@ const ItemEdit = (props) => {
             Save
           </button>
         </form>
+        </div>
       </div>
     </Layout>
   )

@@ -1,11 +1,21 @@
 .item-edit {
   border: 1px solid red;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
 }
-.image-container {
+.image-edit-container {
   border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
 }
-.edit-item-image {
+.item-edit-image {
   border: 1px solid rebeccapurple;
+  width: 300px;
+}
+.item-edit-container {
+  border: 1px solid palevioletred;
 }
 .edit-input-image-link {
   border: 1px solid royalblue;
@@ -19,6 +29,9 @@
 .input-category {
   border: 1px solid chartreuse;
 }
+.input-season {
+  border: 1px solid indigo;
+}
 .input-color {
   border: 1px solid coral;
 }
@@ -27,6 +40,8 @@
 }
 .textarea-notes {
   border: 1px solid hotpink;
+  display: flex;
+  flex-direction: column;
 }
 .save-button {
   border: 1px solid thistle;
