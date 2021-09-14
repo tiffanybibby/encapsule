@@ -66,7 +66,6 @@ const SignIn = (props) => {
               type="text"
               name="email"
               value={email}
-              placeholder="Enter Email"
               onChange={handleChange}
             />
             <label>Password</label>
@@ -75,7 +74,6 @@ const SignIn = (props) => {
               name="password"
               value={password}
               type="password"
-              placeholder="Password"
               onChange={handleChange}
             />
             {renderError()}
