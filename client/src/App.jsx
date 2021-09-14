@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import './App.css'
 import Home from './screens/Home/Home'
 import ItemCreate from './screens/ItemCreate/ItemCreate'
@@ -7,23 +8,55 @@ import Items from './screens/Items/Items'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './screens/SignOut/SignOut'
 import SignUp from './screens/SignUp/SignUp'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import { verifyUser } from './services/users'
+
 
 const App = () => {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
+
+
   return (
-    <div className="App">
+      <div className="app">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/item-create" component={ItemCreate} />
-        <Route exact path="/items/:id" component={ItemDetail} />
-        <Route exact path="/items/:id/edit" component={ItemEdit} />
-        <Route exact path="/items" component={Items} />
-        <Route exact path="/sign-up" component={SignUp} />
-        <Route exact path="/sign-out" component={SignOut} />
-        <Route exact path="/sign-in" component={SignIn} />
+        <Route exact path="/">
+          <Home user={user} />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser} />
+        </Route>
+        <Route path="/sign-in">
+          <SignIn setUser={setUser} />
+        </Route>
+        <Route path="/sign-out">
+          <SignOut setUser={setUser} />
+        </Route>
+        <Route exact path="/items">
+          <Items user={user} />
+        </Route>
+        <Route path="/item-create">
+          {user ? <ItemCreate user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+        <Route exact path="/items/:id/edit">
+          {user ? <ItemEdit user={user} /> : <Redirect to='/' />}
+        </Route>
+        <Route exact path="/items/:id">
+          <ItemDetail user={user} />
+        </Route>
       </Switch>
     </div>
   )
 }
 
 export default App;
+
+
+
