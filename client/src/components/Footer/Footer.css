@@ -20,13 +20,25 @@
   width: 30px;
   font-size: 12px;
 }
+  .github-img:hover { 
+  transform: scale(1.09);
+  opacity: .8;
+}
 
 .TNDR-name {
 font-size: 12px;
 text-align: center;
 font-family: 'Catamaran', sans-serif;
 font-weight: 100;
+text-decoration: none;
+color: black;
 }
+
+.TNDR-name:hover {
+  text-decoration: underline;
+  text-decoration-color: #6AA6A3;
+}
+
 
 .team-name {
   font-size: 14px;
