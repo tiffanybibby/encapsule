@@ -7,9 +7,11 @@ import { getItem, updateItem } from '../../services/items'
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
     name: '',
-    notes: '',
-    imgURL: '',
     category: '',
+    color: '',
+    season: ''
+    imgURL: '',
+    notes: '',
   })
 
   const [isUpdated, setUpdated] = useState(false)
