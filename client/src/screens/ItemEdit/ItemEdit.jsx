@@ -7,9 +7,11 @@ import { getItem, updateItem } from '../../services/items'
 const ItemEdit = (props) => {
   const [item, setItem] = useState({
     name: '',
-    description: '',
+    category: '',
+    color: '',
+    season: '',
     imgURL: '',
-    price: '',
+    notes: '',
   })
 
   const [isUpdated, setUpdated] = useState(false)
@@ -45,11 +47,6 @@ const ItemEdit = (props) => {
     <Layout user={props.user}>
       <div className='item-edit'>
         <div className='image-container'>
-          <img
-            className='edit-item-image'
-            src={item.imgURL}
-            alt={item.name}
-          />
           <form onSubmit={handleSubmit}>
             <input
               className='edit-input-image-link'
@@ -71,21 +68,51 @@ const ItemEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
+          <select
+          className="input-category"
+          placeholder='Category'
+          value={item.category}
+          name='category'
+          required
+          onChange={handleChange}
+          >
+          <option value='choose-category' selected>Choose category</option>
+          <option value='tops'>Tops</option>
+          <option value='skirts'>Skirts</option>
+          <option value='pants'>Pants</option>
+          <option value='dresses'>Dresses</option>
+          </select>
           <input
-            className='input-price'
-            placeholder='Price'
-            value={item.price}
-            name='price'
-            required
-            onChange={handleChange}
+          className="input-color"
+          placeholder='Color'
+          value={item.color}
+          name='color'
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <input
+          className="input-season"
+          placeholder='Season'
+          value={item.season}
+          name='season'
+          required
+          onChange={handleChange}
           />
+          <input
+          className="input-image-link"
+          placeholder='Add image link'
+          value={item.imgURL}
+          name='imgURL'
+          required
+          onChange={handleChange}
+        />
           <textarea
-            className='textarea-description'
+            className='textarea-notes'
             rows={10}
-            cols={78}
-            placeholder='Description'
-            value={item.description}
-            name='description'
+            placeholder='Notes'
+            value={item.notes}
+            name='notes'
             required
             onChange={handleChange}
           />
