@@ -15,11 +15,13 @@ const ItemCards = () => {
   }, [])
 
   const CARDS = items
+    
     .map((item, index) =>
-      index < 20 ? (
+      index < 80 ? (
         <Item
           _id={item._id}
           imgURL={item.imgURL}
+          name={item.name}
           key={index}
         />
       ) : null
