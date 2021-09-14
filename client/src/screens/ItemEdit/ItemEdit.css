@@ -1,27 +1,33 @@
 .item-edit {
-
+  border: 1px solid red;
 }
 .image-container {
-
+  border: 1px solid pink;
 }
 .edit-item-image {
-
+  border: 1px solid rebeccapurple;
 }
 .edit-input-image-link {
-
+  border: 1px solid royalblue;
 }
 .edit-form {
-
+  border: 1px solid sandybrown;
 }
 .input-name {
-
+  border: 1px solid aqua;
 }
-.input-price {
-
+.input-category {
+  border: 1px solid chartreuse;
 }
-.textarea-description {
-
+.input-color {
+  border: 1px solid coral;
+}
+.input-category {
+  border: 1px solid darkgrey;
+}
+.textarea-notes {
+  border: 1px solid hotpink;
 }
 .save-button {
-  
+  border: 1px solid thistle;
 }
