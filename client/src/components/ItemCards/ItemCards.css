@@ -1,6 +1,25 @@
 .item-cards {
-
+  width: 84%;
+  padding: 50px;
+  margin: auto;
 }
+
 .cards {
-  
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .item-cards {
+      width: 90vw;
+      padding: 20px;
+      margin: 0px;
+  }
+  .cards {
+      margin: 0 -20px;
+  }
 }
