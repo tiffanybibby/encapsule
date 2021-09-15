@@ -1,0 +1,79 @@
+.item-detail-image {
+  width: 290px;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.detail {
+  margin-left: 0;
+  margin-top: 17%;
+}
+
+.item-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2% 20% 2% 15%;
+  max-height: 62vh;
+  align-content: space-around;
+  width: 70%;
+  font-family: "Catamaran", sans-serif;
+}
+
+.name-div,
+.category-div,
+.season-div,
+.color-div,
+.notes-div,
+.notes-div {
+  font-weight: 600;
+}
+
+.edit-button,
+.delete-button {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 22%;
+}
+
+.edit-button {
+  border: none;
+  padding: 0.4rem 67px;
+  font-size: 12px;
+}
+
+.button-container a:visited,
+.button-container a:hover,
+.button-container a,
+.button-container a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.delete-button {
+  border: none;
+  padding: 0.4rem 60px;
+  margin-left: 12%;
+  font-size: 12px;
+}
+
+.name-container,
+.category-container,
+.season-container,
+.color-container,
+.notes-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 5vh;
+  max-width: 30vw;
+}
+
+.notes {
+  word-wrap: break-word;
+  inline-size: 170px;
+  overflow-wrap: break-word;
+}
