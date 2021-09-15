@@ -29,7 +29,7 @@ const ItemCards = () => {
 
   return (
     <div className='item-cards'>
-      <div className='cards'>{CARDS}</div>
+      <div className='index-cards'>{CARDS}</div>
     </div>
   )
 }
