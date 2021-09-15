@@ -2,9 +2,9 @@ import "./Home.css";
 import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="home">
         <img
           className="hero-image"
