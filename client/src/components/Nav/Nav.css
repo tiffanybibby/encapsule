@@ -10,9 +10,15 @@
   font-family: 'Poiret One', "cursive";
   font-size: 48px;
   font-weight: bold;
-  text-decoration: none !important;
+  text-decoration: none;
   color: black;
   margin-left: 42%;
+}
+
+.logo:hover,
+.link:hover {
+  text-decoration-color: #6AA6A3;
+  color: black;
 }
 
 .links {
@@ -38,6 +44,7 @@
 .link-welcome:hover {
   text-decoration: underline;
   text-decoration-color: #6AA6A3;
+  color: black;
 }
 
 @media (max-width: 500px) {
@@ -46,7 +53,7 @@
   }
   .logo {
     font-size: 8vw;
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
     margin-left: 30%;
   }

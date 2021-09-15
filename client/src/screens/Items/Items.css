@@ -1,5 +1,5 @@
 .push {
-  height: 1vw;
+  height: 3vw;
 }
 .awkward {
   font-family: "Catamaran";
@@ -22,7 +22,9 @@
   justify-content: center;
 }
 
-img {
+.gif-1,
+.gif-2,
+.gif-3 {
   width: 300px;
   height: auto;
   border-radius: 25px;
@@ -35,6 +37,7 @@ font-weight: bold;
 text-align: center;
 font-size: 22px;
 letter-spacing: 2px;
+margin: 20px;
 }
 
 .closet-empty {
@@ -45,4 +48,27 @@ color: #6AA6A3;
 .closet-empty:hover {
   text-decoration: underline;
   text-decoration-color: #6AA6A3;
+  color: #6AA6A3;
+}
+
+@media (max-width: 500px) {
+  .awkward,
+  .no-closet,
+  .no-closet-sell{
+    font-size: 90%;
+    margin: 45px;
+  }
+  .funny-gifs  {
+    width: 100vw;
+  }
+
+  .gif-1,
+  .gif-2,
+  .gif-3 {
+  width: 30vw;
+  border-radius: 25px;
+}
+.push {
+  height: 48vw;
+}
 }

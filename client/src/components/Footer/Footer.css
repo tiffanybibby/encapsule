@@ -7,7 +7,6 @@
   align-items: center;
   padding: 20px 80px;
   margin-top: 40px;
-  /* left: 0; */
   width: 100vw;
 }
 
@@ -20,7 +19,7 @@
 .github-img {
   width: 30px;
 }
-  .github-img:hover { 
+.github-img:hover { 
   transform: scale(1.09);
   opacity: .8;
 }
@@ -37,8 +36,8 @@ color: black;
 .TNDR-name:hover {
   text-decoration: underline;
   text-decoration-color: #6AA6A3;
+  color: black;
 }
-
 
 .team-name {
   font-size: 14px;
