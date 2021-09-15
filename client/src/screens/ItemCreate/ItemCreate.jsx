@@ -37,76 +37,75 @@ if (isCreated) {
 }
   return (
     <Layout user={props.user}>
-      <div className='create-item'>
-      <form className="create-form" onSubmit={handleSubmit}>
-        <div className='create-item-container'>
-          <div>
-            <label for='name'>Name</label>
-            <input
-              className="input-create-name"
-              placeholder='Name'
-              value={item.name}
-              name='name'
-              required
-              autoFocus
-              onChange={handleChange}
-            />
+      <div className='item-create'>
+        <form className="form-create" onSubmit={handleSubmit}>
+          <div className='item-container-create'>
+            <div className='name-container-create'>
+              <div className='name-create'>Name</div>
+              <input
+                className="name-input-create"
+                placeholder='Name'
+                value={item.name}
+                name='name'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+            </div>
+            <div className='category-container-create'>
+              <div className='category-create'>Category</div>
+              <select
+                className="category-input-create"
+                placeholder='Category'
+                value={item.category}
+                name='category'
+                required
+                onChange={handleChange}
+              >
+                <option value='' defaultValue>Choose category</option>
+                <option value='tops'>Tops</option>
+                <option value='skirts'>Skirts</option>
+                <option value='pants'>Pants</option>
+                <option value='dresses'>Dresses</option>
+              </select>
+            </div>
+            <div className='season-container-create'>
+              <div className='season-create'>Season</div>
+              <input
+                className="season-input-create"
+                placeholder='Season'
+                value={item.season}
+                name='season'
+                required
+                onChange={handleChange}
+              />
+            </div>
+            <div className='color-container-create'>
+              <div className='color-create'>Color</div>
+              <input
+                className="color-input-create"
+                placeholder='Color'
+                value={item.color}
+                name='color'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              </div>
+            <div className='image-container-create'>
+              <div className='image-create'>Change Image Link</div>
+              <input
+                className="image-link-create"
+                placeholder='Add image link'
+                value={item.imgURL}
+                name='imgURL'
+                required
+                onChange={handleChange}
+              />
+            </div>
           </div>
-          <div>
-            <label for='category'>Category</label>
-            <select
-              className="input-create-category"
-              placeholder='Category'
-              value={item.category}
-              name='category'
-              required
-              onChange={handleChange}
-            >
-            <option value='' defaultValue>Choose category</option>
-            <option value='tops'>Tops</option>
-            <option value='skirts'>Skirts</option>
-            <option value='pants'>Pants</option>
-            <option value='dresses'>Dresses</option>
-            </select>
-          </div>
-          <div>
-            <label for='season'>Season</label>
-            <input
-              className="input-create-season"
-              placeholder='Season'
-              value={item.season}
-              name='season'
-              required
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label for='color'>Color</label>
-            <input
-              className="input-create-color"
-              placeholder='Color'
-              value={item.color}
-              name='color'
-              required
-              autoFocus
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label for='imgURL'>Change Image Link</label>
-            <input
-              className="input-create-image-link"
-              placeholder='Add image link'
-              value={item.imgURL}
-              name='imgURL'
-              required
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <div className='create-notes-container'>
-          <div>
-            <label for='notes'>Notes</label>
+          <div className='notes-container-create'>
+            <div className='notes-create'>Notes</div>
             <textarea
               className="textarea-create-notes"
               // rows={10}
@@ -116,13 +115,12 @@ if (isCreated) {
               onChange={handleChange}
             />
           </div>
-        </div>
-        <div className='create-buttons'>
-          <button type='submit' className="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
+          <div className='button-container'>
+            <button type='submit' className="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </Layout>
     )

@@ -48,20 +48,20 @@ const ItemEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className='edit-item'>
-        <div className='edit-image-container'>
+      <div className='item-edit'>
+        <div className='image-container-edit'>
           <img
-            className='edit-item-image'
+            className='item-image-edit'
             src={item.imgURL}
             alt={item.name}
           />
         </div>
-        <div className='edit-item-container'>
-          <form className='edit-form' onSubmit={handleSubmit}>
-            <div>
-              <label for='name'>Name</label>
+        <div className='item-container-edit'>
+          <form className='form-edit' onSubmit={handleSubmit}>
+            <div className='name-container-edit'>
+            <div className='name-edit'>Name</div>
               <input
-                className='edit-input-name'
+                className='name-input-edit'
                 placeholder='Name'
                 value={item.name}
                 name='name'
@@ -70,10 +70,10 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div>
-              <label for='category'>Category</label>
+            <div className='category-container-edit'>
+            <div className='category-edit'>Category</div>
               <select
-                className="edit-input-category"
+                className="category-input-edit"
                 placeholder='Category'
                 value={item.category}
                 name='category'
@@ -87,10 +87,10 @@ const ItemEdit = (props) => {
               <option value='dresses'>Dresses</option>
               </select>
             </div>
-            <div>
-              <label for='season'>Season</label>
+            <div className='season-container-edit'>
+            <div className='season-edit'>Season</div>
               <input
-                className="edit-input-season"
+                className="season-input-edit"
                 placeholder='Season'
                 value={item.season}
                 name='season'
@@ -98,10 +98,10 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div>
-              <label for='color'>Color</label>
+            <div className='color-container-edit'>
+            <div className='color-edit'>Color</div>
               <input
-                className="edit-input-color"
+                className="color-input-edit"
                 placeholder='Color'
                 value={item.color}
                 name='color'
@@ -110,8 +110,8 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div>
-              <label for='imgURL'>Change Image Link</label>
+            <div className='image-container-edit'>
+            <div className='image-edit'>Change Image Link</div>
               <input
                 className="edit-input-image-link"
                 placeholder='Change image link'
@@ -120,11 +120,11 @@ const ItemEdit = (props) => {
                 required
                 onChange={handleChange}
               />
-            </div>
-            <div>
-              <label for='notes'>Notes</label>
+        </div>
+        <div className='notes-container-edit'>
+            <div className='notes-edit'>Notes</div>
               <textarea
-                className='edit-textarea-notes'
+                className='textarea-notes-edit'
                 // rows={10}
                 placeholder='Notes'
                 value={item.notes}
@@ -133,12 +133,12 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className='edit-buttons'>
-              <button type='submit' className='save-button'>
+            <div className='buttons-edit'>
+              <button type='submit' className='save-button-edit'>
                 Save
               </button>
               <button
-                className='edit-delete-button'
+                className='delete-button-edit'
                 onClick={() => {
                   deleteItem(item._id)
                   history.push('/items')

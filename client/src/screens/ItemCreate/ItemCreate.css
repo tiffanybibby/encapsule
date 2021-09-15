@@ -1,83 +1,79 @@
-.create-item {
-  border: 1px solid palevioletred;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  width: 75%;
-  align-items: flex-start;
+.item-create {
+  width: 70%;
+  max-height: 62vh;
+  margin: auto;
+  margin-top: 2%;
 }
-.create-form {
-  border: 1px solid sandybrown;
+.form-create {
+  align-content: space-around;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2% 20% 2% 15%;
 }
-.create-item-container {
-  justify-content: space-between;
-  margin: 50px 0px 50px 20px;
-  flex-direction: row;
+.item-container-create {
+  margin-left: 0px;
 }
-.label {
-  padding: 5px 10px 5px 0px; 
+.name-container-create
+.category-container-create,
+.season-container-create,
+.color-container-create,
+.image-container-create {
+  min-height: 5vh;
 }
-.create-label-name {
-  border: 1px solid palegreen;
-  padding: 5px 10px 5px 0px;
-  /* margin: 5px; */
+.name-create,
+.category-create,
+.season-create,
+.color-create,
+.image-create,
+.notes-create {
+  font-weight: 600;
 }
-.input-create-name {
-  border: 1px solid gray;
-}
-.input-create-category {
+.name-input-create,
+.category-input-create,
+.season-input-create,
+.color-input-create,
+.image-link-create {
   font-family: Catamaran;
-  border: 1px dashed gray;
+  width: 20vw;
 }
-.input-create-season {
-  border: 1px dashed goldenrod; 
-}
-.input-create-color {
-  border: 1px dashed slateblue;
-}
-.input-create-image-link {
-  border: 1px solid royalblue;
+.notes-container-create {
+  min-width: 290px;
+  margin-left: 10%;
+  margin-top: 4%;
+  /* grid-row: span 6 / auto; */
 }
 .textarea-create-notes {
-  border: 1px dashed navy;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  height: 90%;
+  word-wrap: break-word;
+  inline-size: 170px;
+  overflow-wrap: break-word;
 }
-.create-button {
+.submit-button {
+  padding: 10px;
+  color: white;
   background-color: black;
+  margin: 0;
+  /* width: 100px; */
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 22%;
+  font-size: 12px;
+  padding: 0.4rem 67px;
+}
+.button-container {
+  grid-column: span 2 / auto;
+  margin: auto;
+}
+.button-container a:visited,
+.button-container a:hover,
+.button-container a,
+.button-container a:active {
+  text-decoration: none;
   color: white;
 }
-.create-notes-container {
-  border: 1px solid pink;
-  display: flex;
-  margin: 50px 20px 50px 0px;
-  align-self: flex-start;
-  justify-self: right;
-  flex-grow: .75;
-}
-
-.edit-label-category {
-  border: 1px solid palegreen;
-  padding: 5px 10px 5px 0px;
-  /* margin: 5px; */
-}
-
-.edit-label-season {
-  border: 1px solid palegreen;
-  padding: 5px 10px 5px 0px;
-  /* margin: 5px; */
-}
-
-.edit-label-color {
-  border: 1px solid tomato;
-  flex: 1 0 190px;
-  max-width: 200px;
-}
-
-
-@media  and (max-width: 550px) {
+/* @media  and (max-width: 550px) {
   display: flex;
   flex-direction: column;
   margin: auto;  
-}
+} */
