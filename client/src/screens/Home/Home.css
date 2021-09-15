@@ -14,15 +14,22 @@
 }
 .digitize-text {
   font-size: 36px;
+  margin: 45px;
+  font-weight: normal;
 }
 .step-numbers {
   font-family: Poiret One, sans serif;
-  font-size: 50px;
+  font-size: 65px;
   color: #6aa6a3;
+  margin-right: 35px;
 }
 .number-and-icon {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+.heading-and-description {
+  width: 95%;
 }
 .step-headings {
   font-size: 26px;
@@ -30,7 +37,17 @@
 }
 .step-descriptions {
   font-size: 18px;
-  width: 75%;
+  margin: 0;
+}
+.step-1,
+.step-2,
+.step-3 {
+  width: 33%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
 }
 .start-button {
   background-color: black;
@@ -41,44 +58,71 @@
   border-radius: 24px;
   padding: 10px;
   width: 250px;
-  margin: 60px;
+  margin: 50px 0 30px;
   box-shadow: 3px 3px 8px grey;
 }
-/*.step-1 {
-  
- }
- .step-icon {
-  
- }
- .step-2 {
-  
- }
- .step-3 {
-  
- }
- .marketing-container {
-  
- }
- .why-section {
-  
- }
- .why-description {
-  
- }
- .citation-1 {
-  
- }
- .citation-2 {
-  
- }
- .slogan {
-  
- }
- .final-sell {
-  
- }
- .final-ask {
-  
- }
- .encapsulated-button {
+.marketing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.why-section {
+  display: flex;
+  align-items: center;
+}
+.why-description {
+  font-size: 22px;
+  margin-left: 36px;
+}
+.citations {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px 1px lightgrey;
+}
+.slogan {
+  font-family: "Poiret One";
+  font-size: 54px;
+  margin: 40px;
+  color: #6aa6a3;
+  text-shadow: 2px 3px 2px lightgrey;
+}
+.final-sell {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.final-ask {
+  text-align: center;
+  font-size: 22px;
+}
+.encapsulated-button {
+  background-color: black;
+  color: white;
+  font-family: "Catamaran";
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 10px;
+  width: 375px;
+  margin: 75px;
+  box-shadow: 3px 3px 8px grey;
+}
+
+@media screen and (max-width: 1025px) {
+  /*.step-icon {
+    width: 100px;
+  }
+   .instructions-container {
+    width: 70%;
   } */
+  /* .large-logo{
+    width: 300px;
+  }
+  .signup-input{
+    width: 100%;
+    align-self: center;
+    border: 2px lightgrey solid;
+    border-radius: 4px;
+  } */
+}
