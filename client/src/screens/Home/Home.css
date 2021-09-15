@@ -7,6 +7,7 @@
 }
 .hero-image {
   width: 70%;
+  box-shadow: 3px 3px 8px grey;
 }
 .instructions-container {
   display: flex;
@@ -18,10 +19,14 @@
   font-weight: normal;
 }
 .step-numbers {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poiret One", sans serif;
   font-size: 65px;
   color: #6aa6a3;
   margin-right: 35px;
+}
+.step-icon {
+  box-shadow: 3px 3px 8px grey;
+  border-radius: 130px;
 }
 .number-and-icon {
   display: flex;
@@ -110,20 +115,21 @@
   box-shadow: 3px 3px 8px grey;
 }
 
-@media screen and (max-width: 1025px) {
-  /*.step-icon {
+@media (max-width: 500px) {
+  .hero-image {
+    box-shadow: 3px 3px 8px grey;
+  }
+  .digitize-text {
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+  }
+  .instructions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-icon {
     width: 100px;
   }
-   .instructions-container {
-    width: 70%;
-  } */
-  /* .large-logo{
-    width: 300px;
-  }
-  .signup-input{
-    width: 100%;
-    align-self: center;
-    border: 2px lightgrey solid;
-    border-radius: 4px;
-  } */
 }
