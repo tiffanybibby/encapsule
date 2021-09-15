@@ -33,21 +33,23 @@ const ItemDetail = (props) => {
           alt={item.name}
         />
         <div className='detail'>
-          <div className='name-container'>
-            <div className='name-div'>Name</div>
-            <div className='name'>{item.name}</div>
-          </div>
-          <div className='category-container'>
-            <div className='category-div'>Category</div><div className='category'>{item.category}</div>
-          </div>
-          <div className='season-container'>
-            <div className='season-div'>Season</div><div className='season'>{item.season}</div>
-          </div>
-          <div className='color-container'>
-            <div className='color-div'>Color</div><div className='color'>{item.color}</div>
-          </div>
-          <div className='notes-container'>
-            <div className='notes-div'>Notes</div><div className='notes'>{item.notes}</div>
+          <div className='detail-no-button'>
+            <div className='name-container'>
+              <div className='name-div'>Name</div>
+              <div className='name'>{item.name}</div>
+            </div>
+            <div className='category-container'>
+              <div className='category-div'>Category</div><div className='category'>{item.category}</div>
+            </div>
+            <div className='season-container'>
+              <div className='season-div'>Season</div><div className='season'>{item.season}</div>
+            </div>
+            <div className='color-container'>
+              <div className='color-div'>Color</div><div className='color'>{item.color}</div>
+            </div>
+            <div className='notes-container'>
+              <div className='notes-div'>Notes</div><div className='notes'>{item.notes}</div>
+            </div>
           </div>
           <div className='button-container'>
             <button className='edit-button'>
