@@ -1,0 +1,48 @@
+.push {
+  height: 1vw;
+}
+.awkward {
+  font-family: "Catamaran";
+  font-size: 30px;
+  margin: 45px;
+  font-weight: normal;
+}
+
+.no-closet {
+  font-family: "Catamaran";
+  font-size: 30px;
+  margin: 45px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.funny-gifs {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.no-closet-sell {
+color: #6AA6A3;
+font-family: "Poiret One";
+font-weight: bold;
+text-align: center;
+font-size: 22px;
+letter-spacing: 2px;
+}
+
+.closet-empty {
+text-decoration: none;
+color: #6AA6A3;
+}
+
+.closet-empty:hover {
+  text-decoration: underline;
+  text-decoration-color: #6AA6A3;
+}

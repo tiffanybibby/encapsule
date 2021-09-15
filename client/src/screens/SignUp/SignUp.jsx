@@ -32,7 +32,7 @@ const SignUp = (props) => {
         setUser(user);
         history.push("/items");
       } else {
-        throw "Sign Up Details Invalid";
+        throw new Error("Sign Up Details Invalid");
       }
     } catch (error) {
       console.error(error);

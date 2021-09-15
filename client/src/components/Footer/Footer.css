@@ -1,13 +1,14 @@
 .footer {
-  font-size: 20px;
+  font-size: 12px;
   box-shadow: 0px 0px 3px 2px #6AA6A3;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 80px;
+  padding: 20px 80px;
   margin-top: 40px;
-  
+  /* left: 0; */
+  width: 100vw;
 }
 
 .git-icons {
@@ -18,7 +19,6 @@
 
 .github-img {
   width: 30px;
-  font-size: 12px;
 }
   .github-img:hover { 
   transform: scale(1.09);
@@ -44,4 +44,21 @@ color: black;
   font-size: 14px;
   font-family: 'Catamaran', sans-serif;
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    width: 100vw;
+    padding: 20px 10px;
+    font-size: 10px;
+  }
+  .github-img {
+    width: 20px;
+  }
+  .TNDR-name {
+    font-size: 10px;
+    }
+    .team-name {
+      font-size: 12px;
+    }
 }
