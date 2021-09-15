@@ -1,25 +1,83 @@
-.item-create {
-  border: 1px solid green;
+.create-item {
+  border: 1px solid palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 75%;
+  align-items: flex-start;
 }
 .create-form {
-
+  border: 1px solid sandybrown;
 }
-.input-category {
-
+.create-item-container {
+  justify-content: space-between;
+  margin: 50px 0px 50px 20px;
+  flex-direction: row;
 }
-.input-color {
-
+.label {
+  padding: 5px 10px 5px 0px; 
 }
-.input-season {
-
+.create-label-name {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
 }
-.textarea-notes {
-
+.input-create-name {
+  border: 1px solid gray;
 }
-.input-image-link {
-
+.input-create-category {
+  font-family: Catamaran;
+  border: 1px dashed gray;
 }
-.submit-button {
-
+.input-create-season {
+  border: 1px dashed goldenrod; 
+}
+.input-create-color {
+  border: 1px dashed slateblue;
+}
+.input-create-image-link {
+  border: 1px solid royalblue;
+}
+.textarea-create-notes {
+  border: 1px dashed navy;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.create-button {
+  background-color: black;
+  color: white;
+}
+.create-notes-container {
+  border: 1px solid pink;
+  display: flex;
+  margin: 50px 20px 50px 0px;
+  align-self: flex-start;
+  justify-self: right;
+  flex-grow: .75;
 }
 
+.edit-label-category {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
+}
+
+.edit-label-season {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
+}
+
+.edit-label-color {
+  border: 1px solid tomato;
+  flex: 1 0 190px;
+  max-width: 200px;
+}
+
+
+@media  and (max-width: 550px) {
+  display: flex;
+  flex-direction: column;
+  margin: auto;  
+}

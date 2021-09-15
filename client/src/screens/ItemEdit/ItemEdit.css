@@ -1,48 +1,94 @@
-.item-edit {
+.edit-item {
   border: 1px solid red;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
 }
-.image-edit-container {
+.edit-image-container {
   border: 1px solid pink;
   display: flex;
-  flex-direction: row;
+  margin: 50px 20px 50px 0px;
+  align-self: flex-start;
+  justify-self: right;
+  flex-grow: .75;
 }
-.item-edit-image {
+.edit-item-image {
   border: 1px solid rebeccapurple;
   width: 300px;
 }
-.item-edit-container {
+.edit-item-container {
   border: 1px solid palevioletred;
-}
-.edit-input-image-link {
-  border: 1px solid royalblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  margin: 50px 0px 50px 20px;
+  flex-grow: 1.5;
+  justify-content: space-between;
 }
 .edit-form {
   border: 1px solid sandybrown;
 }
-.input-name {
+.edit-label-image-link {
+  border: 1px solid navy;
+}
+.edit-input-image-link {
+  border: 1px solid royalblue;
+}
+.edit-label-name {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
+}
+.edit-input-name {
   border: 1px solid aqua;
 }
-.input-category {
-  border: 1px solid chartreuse;
+.edit-label-category {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
 }
-.input-season {
+.edit-input-category {
+  border: 1px solid chartreuse;
+  font-family: Catamaran;
+}
+.edit-label-season {
+  border: 1px solid palegreen;
+  padding: 5px 10px 5px 0px;
+  /* margin: 5px; */
+}
+.edit-input-season {
   border: 1px solid indigo;
 }
-.input-color {
-  border: 1px solid coral;
+.edit-label-color {
+  border: 1px solid tomato;
+  flex: 1 0 190px;
+  max-width: 200px;
 }
-.input-category {
-  border: 1px solid darkgrey;
+.edit-input-color {
+border: 1px solid coral;
 }
-.textarea-notes {
+.edit-label-notes {
+  padding: 5px 10px 5px 0px;
+}
+.edit-textarea-notes {
   border: 1px solid hotpink;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
-.save-button {
+.edit-buttons {
   border: 1px solid thistle;
+}
+.label {
+  padding: 5px 10px 5px 0px;
+  align-self: flex-start;
+  width: 3em;
+}
+@media  and (max-width: 550px) {
+  display: flex;
+  flex-direction: column;
+  margin: auto;  
 }

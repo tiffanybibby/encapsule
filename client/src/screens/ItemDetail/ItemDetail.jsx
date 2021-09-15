@@ -33,15 +33,27 @@ const ItemDetail = (props) => {
           alt={item.name}
         />
         <div className='detail'>
-          <div className='name-div'>Name</div><p className='name'>{item.name}</p>
-          <div className='category-div'>Category</div><p className='category'>{item.category}</p>
-          <div className='season-div'>Season</div><p className='season'>{item.season}</p>
-          <div className='color-div'>Color</div><p className='color'>{item.color}</p>
-          <div className='notes-div'>Notes</div><p className='notes'>{item.notes}</p>
+          <div className='name-container'>
+            <div className='name-div'>Name</div><div className='name'>{item.name}</div>
+          </div>
+          <div className='category-container'>
+            <div className='category-div'>Category</div><div className='category'>{item.category}</div>
+          </div>
+          <div className='season-container'>
+            <div className='season-div'>Season</div><div className='season'>{item.season}</div>
+          </div>
+          <div className='color-container'>
+            <div className='color-div'>Color</div><div className='color'>{item.color}</div>
+          </div>
+          <div className='notes-container'>
+            <div className='notes-div'>Notes</div><div className='notes'>{item.notes}</div>
+          </div>
           <div className='button-container'>
-            <Link className='edit-button' to={`/items/${item._id}/edit`}>
-              Edit
-            </Link>
+            <button className='edit-button'>
+              <Link  to={`/items/${item._id}/edit`}>
+                Edit
+              </Link>
+            </button>
             <button
               className='delete-button'
               onClick={() => {
