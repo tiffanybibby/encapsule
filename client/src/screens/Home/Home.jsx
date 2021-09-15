@@ -24,11 +24,13 @@ const Home = () => {
                 alt="Person taking a pic of denim jacket"
               />
             </div>
-            <h3 className="step-headings">Take a photo</h3>
-            <p className="step-descriptions">
-              Capture an image of your garment to be included in your virtual
-              closet.
-            </p>
+            <div className="heading-and-description">
+              <h3 className="step-headings">Take a photo</h3>
+              <p className="step-descriptions">
+                Capture an image of your garment to be included in your virtual
+                closet.
+              </p>
+            </div>
           </div>
           <div className="step-2">
             <div className="number-and-icon">
@@ -39,11 +41,13 @@ const Home = () => {
                 alt="Person typing on phone"
               />
             </div>
-            <h3 className="step-headings">Add details</h3>
-            <p className="step-descriptions">
-              Choose a category, color, and more so you can easily find your
-              items later!
-            </p>
+            <div className="heading-and-description">
+              <h3 className="step-headings">Add details</h3>
+              <p className="step-descriptions">
+                Choose a category, color, and more so you can easily find your
+                items later!
+              </p>
+            </div>
           </div>
           <div className="step-3">
             <div className="number-and-icon">
@@ -54,11 +58,13 @@ const Home = () => {
                 alt="Woman browsing on phone"
               />
             </div>
-            <h3 className="step-headings">Browse your closet</h3>
-            <p className="step-descriptions">
-              <i>Et Voila!</i> Now you can put looks together from your
-              wardrobe, no matter where you’re located!
-            </p>
+            <div className="heading-and-description">
+              <h3 className="step-headings">Browse your closet</h3>
+              <p className="step-descriptions">
+                <i>Et Voila!</i> Now you can put looks together from your
+                wardrobe, no matter where you’re located!
+              </p>
+            </div>
           </div>
         </div>
         <Link to="/sign-up">
@@ -73,16 +79,23 @@ const Home = () => {
             />
             <p className="why-description">
               In 2017, 85% of all textitles were thrown away in the United
-              States.{" "}
-              <a href className="citation-1">
-                1
+              States.
+              <a
+                href="https://www.bbc.com/future/article/20200710-why-clothes-are-so-hard-to-recycle"
+                className="citations"
+              >
+                [1]
               </a>{" "}
-              By 2030, global textile waste is expected to exceed 134 million
-              tons per year.{" "}
-              <a href className="citation-2">
-                2
+              &nbsp; By 2030, global textile waste is expected to exceed 134
+              million tons per year.
+              <a
+                href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/textiles-material-specific-data"
+                target="blank"
+                className="citations"
+              >
+                [2]
               </a>{" "}
-              Our mission is to help drastically decrease that number by
+              &nbsp; Our mission is to help drastically decrease that number by
               empowering our users to reduce their waste by rewearing items in
               their wardrobe more frequently, and to invest in sustainable,
               durable clothing.
