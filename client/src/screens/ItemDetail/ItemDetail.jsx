@@ -34,7 +34,8 @@ const ItemDetail = (props) => {
         />
         <div className='detail'>
           <div className='name-container'>
-            <div className='name-div'>Name</div><div className='name'>{item.name}</div>
+            <div className='name-div'>Name</div>
+            <div className='name'>{item.name}</div>
           </div>
           <div className='category-container'>
             <div className='category-div'>Category</div><div className='category'>{item.category}</div>
@@ -66,6 +67,7 @@ const ItemDetail = (props) => {
           </div>
         </div>
       </div>
+      <div class="push-detail"></div>
     </Layout>
   )
 }

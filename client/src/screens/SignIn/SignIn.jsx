@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { signIn } from "../../services/users";
 import Layout from "../../components/Layout/Layout";
+import { Link } from 'react-router-dom'
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -43,12 +44,12 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <button className="sign-in-button" type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return <button className="sign-in-button" type="submit">Sign In</button>;
     }
   };
 
@@ -58,26 +59,32 @@ const SignIn = (props) => {
     <Layout>
       <div className="sign-in">
         <div className="form-container">
-          <h3>Sign In</h3>
           <form onSubmit={onSignIn}>
-            <label>Email</label>
-            <input
-              required
-              type="text"
-              name="email"
-              value={email}
-              onChange={handleChange}
-            />
-            <label>Password</label>
-            <input
-              required
-              name="password"
-              value={password}
-              type="password"
-              onChange={handleChange}
-            />
+            <div className="sign-in-email">
+              <label>Email</label>
+              <br/>
+              <input
+                required
+                type="text"
+                name="email"
+                value={email}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label>Password</label>
+              <br/>
+              <input
+                required
+                name="password"
+                value={password}
+                type="password"
+                onChange={handleChange}
+              />
+            </div>
             {renderError()}
           </form>
+          <Link className="sign-up-link" to="/sign-up">Don't have an account?</Link>
         </div>
       </div>
     </Layout>

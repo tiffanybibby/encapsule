@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './screens/Home/Home'
 import ItemCreate from './screens/ItemCreate/ItemCreate'
 import ItemDetail from './screens/ItemDetail/ItemDetail'

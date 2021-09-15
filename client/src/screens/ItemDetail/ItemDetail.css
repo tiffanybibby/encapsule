@@ -1,3 +1,6 @@
+.push-detail {
+  height: 4vw;
+}
 .item-detail-image {
   width: 290px;
   margin-left: 10%;
@@ -76,4 +79,9 @@
   word-wrap: break-word;
   inline-size: 170px;
   overflow-wrap: break-word;
+}
+
+.name,
+.color {
+  text-transform: capitalize;
 }
