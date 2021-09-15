@@ -1,6 +1,38 @@
 .sign-in {
-}
-.form-container {
+  font-family: "Catamaran", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 71vh;
 }
 
+.sign-in-button {
+  color: white;
+  background-color: black;
+  margin-top: 7%;
+  border-radius: 15px;
+  border: none;
+  padding: 0.25rem 110px;
+  font-family: "Catamaran", sans-serif;
+}
 
+.sign-in input {
+  width: 250px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 1%;
+  display: inline-block;
+}
+
+.sign-in-email {
+  margin-bottom: 2%;
+}
