@@ -69,7 +69,6 @@ const ItemDetail = (props) => {
           </div>
         </div>
       </div>
-      <div class="push-detail"></div>
     </Layout>
   )
 }
