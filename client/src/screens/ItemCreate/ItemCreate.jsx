@@ -3,6 +3,7 @@ import Layout from '../../components/Layout/Layout'
 import { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import { createItem } from '../../services/items'
+import SeasonDropDown from '../../components/SeasonDropDown/SeasonDropDown'
 
 const ItemCreate = (props) => {
 
@@ -10,11 +11,11 @@ const ItemCreate = (props) => {
     name: '',
     imgURL: '',
     category: '',
-    season: '',
+    season: [],
     color: '',
     notes: ''
 })
-
+  // const [selectedSeason, setSelectedSeason] = useState(""); 
   const [isCreated, setCreated] = useState(false)
 
   const handleChange = (e) => {
@@ -69,7 +70,7 @@ if (isCreated) {
                 <option value='dresses'>Dresses</option>
               </select>
             </div>
-            <div className='season-container-create'>
+            {/* <div className='season-container-create'>
               <div className='season-create'>Season</div>
               <input
                 className="season-input-create"
@@ -79,7 +80,7 @@ if (isCreated) {
                 required
                 onChange={handleChange}
               />
-            </div>
+            </div> */}
             <div className='color-container-create'>
               <div className='color-create'>Color</div>
               <input
@@ -115,6 +116,9 @@ if (isCreated) {
               onChange={handleChange}
             />
           </div>
+          <br/>
+          <div><SeasonDropDown value={item.season} onChange={handleChange}
+          ></SeasonDropDown></div>
           <div className='button-container'>
             <button type='submit' className="submit-button">
               Submit
