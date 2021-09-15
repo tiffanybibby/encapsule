@@ -1,17 +1,18 @@
 .nav {
-  font-size: 20px;
   box-shadow: 0px 0px 3px 2px #6AA6A3;
   display: flex;
   align-items: center;
   padding: 20px;
+  width: 100vw;
 }
 
 .logo {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', "cursive";
   font-size: 48px;
+  font-weight: bold;
   text-decoration: none !important;
   color: black;
-  margin-left: 40%;
+  margin-left: 42%;
 }
 
 .links {
@@ -25,15 +26,39 @@
   color: black;
   padding-right: 20px ;
   font-family: 'Catamaran', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
 }
 
 .link-welcome {
   padding-right: 60px;
+  text-transform: capitalize;
 }
 
 .link-welcome:hover {
   text-decoration: underline;
   text-decoration-color: #6AA6A3;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    width: 100vw;
+  }
+  .logo {
+    font-size: 8vw;
+    text-decoration: none !important;
+    color: black;
+    margin-left: 30%;
+  }
+  .links {
+    margin: auto;
+    padding-right: 0px;
+  }
+  .link, .link-welcome {
+    font-weight: 100;
+    font-size: 3vw;
+  }
+  .link-welcome {
+    padding-right: 20px;
+  }
 }
