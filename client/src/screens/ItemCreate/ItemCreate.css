@@ -1,25 +1,79 @@
 .item-create {
-  border: 1px solid green;
+  width: 70%;
+  max-height: 62vh;
+  margin: auto;
+  margin-top: 2%;
 }
-.create-form {
-
+.form-create {
+  align-content: space-around;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2% 20% 2% 15%;
 }
-.input-category {
-
+.item-container-create {
+  margin-left: 0px;
 }
-.input-color {
-
+.name-container-create
+.category-container-create,
+.season-container-create,
+.color-container-create,
+.image-container-create {
+  min-height: 5vh;
 }
-.input-season {
-
+.name-create,
+.category-create,
+.season-create,
+.color-create,
+.image-create,
+.notes-create {
+  font-weight: 600;
 }
-.textarea-notes {
-
+.name-input-create,
+.category-input-create,
+.season-input-create,
+.color-input-create,
+.image-link-create {
+  font-family: Catamaran;
+  width: 20vw;
 }
-.input-image-link {
-
+.notes-container-create {
+  min-width: 290px;
+  margin-left: 10%;
+  margin-top: 4%;
+  /* grid-row: span 6 / auto; */
+}
+.textarea-create-notes {
+  height: 90%;
+  word-wrap: break-word;
+  inline-size: 170px;
+  overflow-wrap: break-word;
 }
 .submit-button {
-
+  padding: 10px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  /* width: 100px; */
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 22%;
+  font-size: 12px;
+  padding: 0.4rem 67px;
 }
-
+.button-container {
+  grid-column: span 2 / auto;
+  margin: auto;
+}
+.button-container a:visited,
+.button-container a:hover,
+.button-container a,
+.button-container a:active {
+  text-decoration: none;
+  color: white;
+}
+/* @media  and (max-width: 550px) {
+  display: flex;
+  flex-direction: column;
+  margin: auto;  
+} */
