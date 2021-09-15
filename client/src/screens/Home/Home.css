@@ -29,7 +29,7 @@
   align-items: center;
 }
 .heading-and-description {
-  width: 95%;
+  width: 100%;
 }
 .step-headings {
   font-size: 26px;
@@ -82,10 +82,11 @@
 }
 .slogan {
   font-family: "Poiret One";
-  font-size: 54px;
+  font-size: 44px;
   margin: 40px;
   color: #6aa6a3;
   text-shadow: 2px 3px 2px lightgrey;
+  text-align: center;
 }
 .final-sell {
   text-align: center;
@@ -105,7 +106,7 @@
   border-radius: 24px;
   padding: 10px;
   width: 375px;
-  margin: 75px;
+  margin: 50px 0;
   box-shadow: 3px 3px 8px grey;
 }
 
