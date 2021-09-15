@@ -1,20 +1,21 @@
 .item-create {
-  width: 70%;
+  display: grid;
+  margin: 0% 20% 5% 15%;
   max-height: 62vh;
-  margin: auto;
-  margin-top: 2%;
+  align-content: space-around;
+  width: 70%;
+  font-family: "Catamaran", sans-serif;
 }
 .form-create {
-  align-content: space-around;
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 2% 20% 2% 15%;
+  justify-content: center;
+  margin: 6% 20% 2% 15%;
 }
 .item-container-create {
   margin-left: 0px;
 }
-.name-container-create
+.name-container-create,
 .category-container-create,
 .season-container-create,
 .color-container-create,
@@ -39,8 +40,7 @@
 }
 .notes-container-create {
   min-width: 290px;
-  margin-left: 10%;
-  margin-top: 4%;
+  margin-left: 20%;
   /* grid-row: span 6 / auto; */
 }
 .textarea-create-notes {
@@ -48,8 +48,9 @@
   word-wrap: break-word;
   inline-size: 170px;
   overflow-wrap: break-word;
+  width: 100%;
 }
-.submit-button {
+.save-button {
   padding: 10px;
   color: white;
   background-color: black;
@@ -58,22 +59,52 @@
   border-radius: 15px;
   text-align: center;
   margin-top: 22%;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0.4rem 67px;
 }
-.button-container {
+.button-container-create {
   grid-column: span 2 / auto;
   margin: auto;
 }
-.button-container a:visited,
-.button-container a:hover,
-.button-container a,
-.button-container a:active {
+.button-container-create a:visited,
+.button-container-create a:hover,
+.button-container-create a,
+.button-container-create a:active {
   text-decoration: none;
-  color: white;
 }
-/* @media  and (max-width: 550px) {
-  display: flex;
-  flex-direction: column;
-  margin: auto;  
-} */
+@media (max-width: 500px) {
+  .notes-container-create  {
+    width: 170px;
+  }
+  .item-create {
+    width: 100%;
+  }
+  .item-container-create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    /* min-height: 74vh; */
+    justify-content: center;
+    align-content: stretch;
+  }
+  .name-container,
+  .category-container,
+  .season-container,
+  .color-container {
+    display: grid;
+    min-height: 5vh;
+    max-width: 70vw;
+    margin-left: 12%;
+  }
+  .button-create {
+    padding: 0.2rem 45px;
+    margin-top: 3%;
+    margin-left: 11%;
+  }
+  .save-button {
+    padding: 0.2rem 45px;
+    margin: 0;
+    border: 1px solid saddlebrown;
+  }
+}
