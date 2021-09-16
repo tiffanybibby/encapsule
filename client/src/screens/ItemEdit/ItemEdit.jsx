@@ -49,7 +49,7 @@ const ItemEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className='item-edit'>
-        <div className='image-container-edit'>
+        <div className='item-image-container-edit'>
           <img
             className='item-image-edit'
             src={item.imgURL}
@@ -110,10 +110,10 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className='image-container-edit'>
-            <div className='image-edit'>Change Image Link</div>
+            <div className='imageURL-container-edit'>
+            <div className='imageURL-edit'>Image Link</div>
               <input
-                className="edit-input-image-link"
+                className="imageURL-input-edit"
                 placeholder='Change image link'
                 value={item.imgURL}
                 name='imgURL'
@@ -125,9 +125,9 @@ const ItemEdit = (props) => {
             <div className='notes-edit'>Notes</div>
               <textarea
                 className='textarea-notes-edit'
-                // rows={10}
                 placeholder='Notes'
                 value={item.notes}
+                rows='5'
                 name='notes'
                 required
                 onChange={handleChange}

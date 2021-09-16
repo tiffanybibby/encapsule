@@ -1,20 +1,23 @@
 .item-create {
+  display: grid;
   width: 70%;
+  align-items: stretch;
+  justify-content: center;
   max-height: 62vh;
-  margin: auto;
-  margin-top: 2%;
+  margin: 4% 20% 2% 15%;
 }
 .form-create {
-  align-content: space-around;
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 2% 20% 2% 15%;
+  justify-content: center;
+  column-gap: 50px;
 }
 .item-container-create {
-  margin-left: 0px;
+  justify-self: end;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
 }
-.name-container-create
+.name-container-create,
 .category-container-create,
 .season-container-create,
 .color-container-create,
@@ -34,46 +37,67 @@
 .season-input-create,
 .color-input-create,
 .image-link-create {
-  font-family: Catamaran;
-  width: 20vw;
+  min-width: 10vw;
 }
 .notes-container-create {
   min-width: 290px;
-  margin-left: 10%;
-  margin-top: 4%;
-  /* grid-row: span 6 / auto; */
+  align-items: stretch;
 }
-.textarea-create-notes {
-  height: 90%;
+.textarea-notes-create {
   word-wrap: break-word;
-  inline-size: 170px;
   overflow-wrap: break-word;
+  justify-self: stretch;
 }
-.submit-button {
-  padding: 10px;
+.save-button {
+  margin: 5px;
   color: white;
   background-color: black;
-  margin: 0;
-  /* width: 100px; */
   border-radius: 15px;
   text-align: center;
-  margin-top: 22%;
   font-size: 12px;
-  padding: 0.4rem 67px;
+  padding: 0.4rem 50px;
 }
-.button-container {
+.button-container-create {
   grid-column: span 2 / auto;
   margin: auto;
 }
-.button-container a:visited,
-.button-container a:hover,
-.button-container a,
-.button-container a:active {
+.button-container-create a:visited,
+.button-container-create a:hover,
+.button-container-create a,
+.button-container-create a:active {
   text-decoration: none;
-  color: white;
 }
-/* @media  and (max-width: 550px) {
-  display: flex;
-  flex-direction: column;
-  margin: auto;  
-} */
+@media (max-width: 500px) {
+  .notes-container-create  {
+    width: 170px;
+  }
+  .item-create {
+    width: 100%;
+  }
+  .item-container-create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-content: stretch;
+  }
+  .name-container,
+  .category-container,
+  .season-container,
+  .color-container {
+    display: grid;
+    min-height: 5vh;
+    max-width: 70vw;
+    margin-left: 12%;
+  }
+  .button-create {
+    padding: 0.2rem 45px;
+    margin-top: 3%;
+    margin-left: 11%;
+  }
+  .save-button {
+    padding: 0.2rem 45px;
+    margin: 0;
+  }
+}

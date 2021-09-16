@@ -3,7 +3,6 @@ import Layout from '../../components/Layout/Layout'
 import { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import { createItem } from '../../services/items'
-import SeasonDropDown from '../../components/SeasonDropDown/SeasonDropDown'
 
 const ItemCreate = (props) => {
 
@@ -15,12 +14,11 @@ const ItemCreate = (props) => {
     color: '',
     notes: ''
 })
-  // const [selectedSeason, getSelectedSeason] = useState('')
+
   const [isCreated, setCreated] = useState(false)
 
   const handleChange = (e) => {
     console.log(props)
-    console.log(e.target.value)
     const { name, value } = e.target
       setItem({
         ...item,
@@ -71,7 +69,7 @@ if (isCreated) {
                 <option value='dresses'>Dresses</option>
               </select>
             </div>
-            {/* <div className='season-container-create'>
+            <div className='season-container-create'>
               <div className='season-create'>Season</div>
               <input
                 className="season-input-create"
@@ -81,7 +79,7 @@ if (isCreated) {
                 required
                 onChange={handleChange}
               />
-            </div> */}
+            </div>
             <div className='color-container-create'>
               <div className='color-create'>Color</div>
               <input
@@ -109,7 +107,7 @@ if (isCreated) {
           <div className='notes-container-create'>
             <div className='notes-create'>Notes</div>
             <textarea
-              className="textarea-create-notes"
+              className="textarea-notes-create"
               // rows={10}
               placeholder='Notes'
               value={item.notes}
@@ -117,13 +115,9 @@ if (isCreated) {
               onChange={handleChange}
             />
           </div>
-          <br/>
-          <div>
-            <SeasonDropDown value={item.season} onChange={handleChange}></SeasonDropDown>
-          </div>
-          <div className='button-container'>
-            <button type='submit' className="submit-button">
-              Submit
+          <div className='button-container-create'>
+            <button type='submit' className="save-button">
+              Save
             </button>
           </div>
         </form>

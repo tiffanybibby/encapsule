@@ -79,10 +79,10 @@ const SignUp = (props) => {
             src="https://lh3.googleusercontent.com/MJQaCBft3cJZSda5vhRDotuObepiBk-X4CrlAuw7_WKSwyTAYphb94Qg-5sb-d-sS0YprGds1rT3_SjFUBjyBbtgyCeBoSniFJ_sUwgZ0YHzb3ZJVJ315Lpld0mZ_vqISLf4X9dD4dE=h480"
             alt="Happy woman sitting in organized closet"
           />
-          <h1 className="signup-headline">Always know what to wear!</h1>
-          <h2 className="signup-caption">
+          <p className="signup-headline">Always know what to wear!</p>
+          <p className="signup-caption">
             Easily keep track of your clothing with enCapsule.
-          </h2>
+          </p>
         </div>
         <div className="right-column">
           <form className="sign-up-form" onSubmit={onSignUp}>
@@ -122,7 +122,7 @@ const SignUp = (props) => {
               onChange={handleChange}
               className="signup-input"
             />
-            <label className="signup-labels">Password Confirmation</label>
+            <label className="signup-labels">Confirm Password </label>
             <input
               required
               type="password"

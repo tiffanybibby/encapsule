@@ -108,9 +108,14 @@ const Home = (props) => {
             items you already own that may be hiding in the back of your closet.
           </p>
           <p className="final-ask">
-            You’re also more likely to assemble outfits more quickly and get out
-            of the door faster! <br /> Start saving time, money, and ultimately,
-            our planet today with enCapsule.
+            <i>
+              You’re also more likely to assemble outfits more quickly and get
+              out of the door faster!
+            </i>
+          </p>
+          <p className="save-text">
+            Start saving time, money, and ultimately, our planet today with
+            enCapsule.
           </p>
         </div>
         <Link to="/sign-up">

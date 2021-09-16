@@ -3,17 +3,20 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 71vh;
+  min-height: 66vh;
 }
 
 .sign-in-button {
   color: white;
   background-color: black;
-  margin-top: 7%;
-  border-radius: 15px;
-  border: none;
-  padding: 0.25rem 110px;
+  margin-top: 6%;
+  border-radius: 24px;
+  padding: 0.25rem 98px;
   font-family: "Catamaran", sans-serif;
+  box-shadow: 3px 3px 8px grey;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .sign-in input {
@@ -28,11 +31,29 @@
   padding-right: 20px;
   font-family: "Catamaran", sans-serif;
   font-weight: 100;
-  font-size: 14px;
-  margin-top: 1%;
+  font-size: 16px;
+  margin-top: 4%;
   display: inline-block;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #6AA6A3;
+  color: black;
 }
 
 .sign-in-email {
   margin-bottom: 2%;
+}
+
+.sign-in-error {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .sign-in {
+    min-height: 74vh;
+  }
 }

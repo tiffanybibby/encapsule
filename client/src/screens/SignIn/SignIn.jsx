@@ -33,7 +33,7 @@ const SignIn = (props) => {
       console.error(error);
       setForm({
         isError: true,
-        errorMsg: "Invalid Credentials",
+        errorMsg: "Invalid Credentials. Please try again",
         email: "",
         password: "",
       });
@@ -41,12 +41,12 @@ const SignIn = (props) => {
   };
 
   const renderError = () => {
-    const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button className="sign-in-button" type="submit" className={toggleForm}>
-          {form.errorMsg}
-        </button>
+        <>
+          <p className="sign-in-error">{form.errorMsg}</p>
+          <button className="sign-in-button" type="submit">Sign In</button>
+        </>
       );
     } else {
       return <button className="sign-in-button" type="submit">Sign In</button>;

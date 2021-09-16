@@ -1,88 +1,119 @@
 .item-edit {
-  border: 1px solid red;
+  display: grid;
   width: 70%;
   max-height: 62vh;
-  margin: 2% 20% 2% 15%;
+  column-gap: 50px;
+  margin: 4% 20% 2% 15%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  display: grid;
-  align-content: space-around;
+  align-items: stretch;
 }
-.image-container-edit {
-  border: 1px solid pink;
-  margin-left: 10%;
-  margin-top: 4%;
+.item-image-container-edit{
+  justify-self: end;
 }
 .item-image-edit {
-  border: 1px solid rebeccapurple;
   width: 290px;
-  margin-top: 17%;
-  /* margin-right: 0px; */
 }
 .item-container-edit {
   display: grid;
-  max-width: 30vw;
-  grid-template-columns: 1fr 2fr;
+  width: 90%;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
+  justify-self: start;
+}
+.form-edit {
+  display: grid;
+  align-content: space-between;
 }
 .name-container-edit,
 .category-container-edit,
 .season-container-edit,
 .color-container-edit,
-.image-container-edit {
-  min-height: 5vh;
-  margin-left: 10%;
+.image-container-edit,
+.imageURL-container-edit,
+.notes-container-edit {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 .name-edit,
 .category-edit,
 .season-edit,
 .color-edit,
-.image-edit,
+.imageURL-edit,
 .notes-edit {
+  display: inline-block;
   font-weight: 600;
 }
 .name-input-edit,
 .category-input-edit,
 .season-input-edit,
 .color-input-edit,
-.image-link-edit {
-  font-family: Catamaran;
-  width: 20vw;
+.imageURL-input-edit {
+  min-height: 5vh;
+  min-width: 10vw;
 }
 .notes-container-edit {
   min-width: 290px;
+  align-items: stretch;
 }
-.textarea-edit-notes {
-  height: 90%;
+.textarea-notes-edit {
   word-wrap: break-word;
-  inline-size: 170px;
   overflow-wrap: break-word;
+  height: 100%;
 }
 .buttons-edit {
-  grid-column: span 2 / auto;
-  margin: auto;
+  display: inline-block;
+  justify-self: center;
 }
 .save-button-edit,
 .delete-button-edit {
-  padding: 10px;
-  display: inline-block;
+  margin: 5px;
   color: white;
   background-color: black;
-  margin: 0;
   border-radius: 15px;
   text-align: center;
-  margin-top: 22%;
   font-size: 12px;
-  padding: 0.4rem 67px;
+  padding: 0.4rem 50px;
+  
 }
 .button-container a:visited,
 .button-container a:hover,
 .button-container a,
 .button-container a:active {
   text-decoration: none;
-  color: white;
 }
-/* @media  and (max-width: 550px) {
-  display: flex;
-  flex-direction: column;
-  margin: auto;  
-} */
+
+@media (max-width: 500px) {
+  .notes-container-create  {
+    width: 170px;
+  }
+  .item-create {
+    width: 100%;
+  }
+  .item-container-create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-content: stretch;
+  }
+  .name-container,
+  .category-container,
+  .season-container,
+  .color-container {
+    display: grid;
+    min-height: 5vh;
+    max-width: 70vw;
+    margin-left: 12%;
+  }
+  .button-create {
+    padding: 0.2rem 45px;
+    margin-top: 3%;
+    margin-left: 11%;
+  }
+  .save-button {
+    padding: 0.2rem 45px;
+    margin: 0;
+  }
+}
