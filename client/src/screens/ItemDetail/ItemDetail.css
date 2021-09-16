@@ -24,12 +24,7 @@
   letter-spacing: 0.05rem;
 }
 
-.name-div,
-.category-div,
-.season-div,
-.color-div,
-.notes-div,
-.notes-div {
+.item-detail-div {
   font-weight: 600;
   display: flex;
 }
@@ -67,11 +62,7 @@
   color: white;
 }
 
-.name-container,
-.category-container,
-.season-container,
-.color-container,
-.notes-container {
+.item-detail-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   min-height: 5vh;
@@ -113,11 +104,7 @@
     min-height: 70vh;
   }
 
-  .name-container,
-  .category-container,
-  .season-container,
-  .color-container,
-  .notes-container {
+  .item-detail-container {
     display: grid;
     min-height: 5vh;
     max-width: 70vw;
