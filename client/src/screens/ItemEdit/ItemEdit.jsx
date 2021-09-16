@@ -80,7 +80,7 @@ const ItemEdit = (props) => {
                 required
                 onChange={handleChange}
               >
-              <option value='choose-category' defaultValue>Select</option>
+              <option value='choose-category' defaultValue>Choose category</option>
               <option value='tops'>Tops</option>
               <option value='skirts'>Skirts</option>
               <option value='pants'>Pants</option>
