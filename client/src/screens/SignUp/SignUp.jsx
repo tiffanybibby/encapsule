@@ -122,7 +122,7 @@ const SignUp = (props) => {
               onChange={handleChange}
               className="signup-input"
             />
-            <label className="signup-labels">Password Confirmation</label>
+            <label className="signup-labels">Confirm Password </label>
             <input
               required
               type="password"
