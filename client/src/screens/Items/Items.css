@@ -1,0 +1,75 @@
+.awkward {
+  font-family: "Catamaran";
+  font-size: 22px;
+  margin: 45px 45px 45px 205px;
+  font-weight: normal;
+}
+
+.no-closet {
+  font-family: "Catamaran";
+  font-size: 24px;
+  margin: 45px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.funny-gifs {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+}
+
+.gif-1,
+.gif-2,
+.gif-3 {
+  width: 300px;
+  height: auto;
+  border-radius: 25px;
+  padding: 0 10px
+}
+
+.no-closet-sell {
+color: #6AA6A3;
+font-family: "Poiret One";
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+letter-spacing: 2px;
+margin: 20px;
+}
+
+.closet-empty {
+text-decoration: none;
+color: #6AA6A3;
+}
+
+.closet-empty:hover {
+  text-decoration: underline;
+  text-decoration-color: #6AA6A3;
+  color: #6AA6A3;
+}
+
+@media (max-width: 500px) {
+  .awkward,
+  .no-closet,
+  .no-closet-sell{
+    font-size: 90%;
+    margin: 45px;
+  }
+  .funny-gifs  {
+    width: 100vw;
+  }
+
+  .gif-1,
+  .gif-2,
+  .gif-3 {
+  width: 30vw;
+  border-radius: 25px;
+  padding: 0 2px;
+}
+.push {
+  height: 48vw;
+}
+}

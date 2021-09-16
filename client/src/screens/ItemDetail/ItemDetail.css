@@ -1,0 +1,147 @@
+.item-detail-image {
+  width: 290px;
+  margin-left: 15%;
+  margin-top: 13%;
+}
+
+.detail-no-button {
+  margin-left: 11%;
+}
+
+.detail {
+  margin-left: 0;
+  margin-top: 17%;
+}
+
+.item-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0% 20% 5% 15%;
+  max-height: 62vh;
+  align-content: space-around;
+  width: 70%;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+.item-detail-div {
+  font-weight: 600;
+  display: flex;
+}
+
+.edit-button,
+.delete-button {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 8%;
+  box-shadow: 3px 3px 8px grey;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.edit-button {
+  padding: 0.2rem 67px;
+}
+
+.delete-button {
+  padding: 0.2rem 60px;
+  margin-left: 12%;
+}
+
+.button-container a:visited,
+.button-container a:hover,
+.button-container a,
+.button-container a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.item-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 5vh;
+  max-width: 30vw;
+}
+
+.notes {
+  word-wrap: break-word;
+  inline-size: 180px;
+  overflow-wrap: break-word;
+  height: 150px;
+  overflow: auto;
+}
+
+.name,
+.color,
+.category {
+  text-transform: capitalize;
+}
+
+@media (max-width: 500px) {
+  .item-detail-image {
+    width: 170px;
+    margin-left: 28%;
+    margin-top: 0%;
+  }
+
+  .detail {
+    margin-left: 0;
+    margin-top: 8%;
+    width: 100%;
+  }
+
+  .item-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10% 0 0 0;
+    min-height: 70vh;
+  }
+
+  .item-detail-container {
+    display: grid;
+    min-height: 5vh;
+    max-width: 70vw;
+    margin-left: 12%;
+  }
+
+  .edit-button,
+  .delete-button {
+    margin-top: 8%;
+  }
+
+  .edit-button {
+    padding: 0.2rem 50px;
+    margin-left: 10%;
+  }
+
+  .delete-button {
+    padding: 0.2rem 43px;
+  }
+
+  .notes {
+    height: 100px;
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 1350px) {
+  .notes::-webkit-scrollbar {
+    display: none;
+  }
+
+  .notes {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .item-detail {
+    min-height: 65vh;
+  }
+}

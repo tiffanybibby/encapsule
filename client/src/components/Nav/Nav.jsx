@@ -1,6 +1,7 @@
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
+
 const authenticatedOptions = (
     <>
         <NavLink className="link" to="/item-create">Add Item</NavLink>
@@ -13,12 +14,6 @@ const unauthenticatedOptions = (
         <NavLink className="link" to="/sign-in">Sign In</NavLink>
     </>
 )
-// const alwaysOptions = (
-//     <>
-//         <NavLink className="link" to="/items">Closet</NavLink>
-//     </>
-// )
-
 
 const Nav = ({ user }) => {
   return (
@@ -27,9 +22,7 @@ const Nav = ({ user }) => {
         <NavLink className="logo" to="/">enCapsule</NavLink>
         <div className="links">
           {user && <NavLink className="link-welcome" to="/items">{user.first_name}'s Closet</NavLink>}
-          {/* {alwaysOptions} */}
           {user ? authenticatedOptions : unauthenticatedOptions}
-
         </div>
       </div>
     </nav>

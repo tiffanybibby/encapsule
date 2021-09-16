@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Item = (props) => {
     return (
-        <>
-            <Link className="item" to={`/items/${props._id}`}>
+        <> 
+            <Link className="item-component" to={`/items/${props._id}`}>
                 <img className="item-image" src={props.imgURL} alt={props.name} />
                 <div className="item-name">{props.name}</div>
                 <div className="item-category">{props.category}</div>

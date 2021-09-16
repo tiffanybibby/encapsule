@@ -37,65 +37,86 @@ if (isCreated) {
 }
   return (
     <Layout user={props.user}>
-      <form className="create-form" onSubmit={handleSubmit}>
-      <input
-          className="input-name"
-          placeholder='Name'
-          value={item.name}
-          name='name'
-          required
-          autoFocus
-          onChange={handleChange}
-        />
-      <select
-          className="input-category"
-          placeholder='Category'
-          value={item.category}
-          name='category'
-          required
-          onChange={handleChange}
-        >
-        <option value='' selected>Choose category</option>
-        <option value='tops'>Tops</option>
-        <option value='skirts'>Skirts</option>
-        <option value='pants'>Pants</option>
-        <option value='dresses'>Dresses</option>
-        </select>
-        <input
-          className="input-color"
-          placeholder='Color'
-          value={item.color}
-          name='color'
-          required
-          autoFocus
-          onChange={handleChange}
-        />
-        <input
-          className="input-season"
-          placeholder='Season'
-          value={item.season}
-          name='season'
-          required
-          onChange={handleChange}
-        />
-        <input
-          className="input-image-link"
-          placeholder='Add image link'
-          value={item.imgURL}
-          name='imgURL'
-          required
-          onChange={handleChange}
-        />
-        <textarea
-          className="textarea-notes"
-          rows={10}
-          placeholder='Notes'
-          value={item.notes}
-          name='notes'
-          onChange={handleChange}
-        />
-        <button type='submit' className="submit-button">Submit</button>
-      </form>
+      <div className='item-create'>
+        <form className="form-create" onSubmit={handleSubmit}>
+          <div className='item-container-create'>
+            <div className='name-container-create'>
+              <div className='name-create'>Name</div>
+              <input
+                className="name-input-create"
+                value={item.name}
+                name='name'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+            </div>
+            <div className='category-container-create'>
+              <div className='category-create'>Category</div>
+              <select
+                className="category-input-create"
+                placeholder='Category'
+                value={item.category}
+                name='category'
+                required
+                onChange={handleChange}
+              >
+                <option value='' defaultValue>Select</option>
+                <option value='tops'>Tops</option>
+                <option value='skirts'>Skirts</option>
+                <option value='pants'>Pants</option>
+                <option value='dresses'>Dresses</option>
+              </select>
+            </div>
+            <div className='season-container-create'>
+              <div className='season-create'>Season</div>
+              <input
+                className="season-input-create"
+                value={item.season}
+                name='season'
+                required
+                onChange={handleChange}
+              />
+            </div>
+            <div className='color-container-create'>
+              <div className='color-create'>Color</div>
+              <input
+                className="color-input-create"
+                value={item.color}
+                name='color'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              </div>
+            <div className='image-container-create'>
+              <div className='image-create'>Upload Image</div>
+              <input
+                className="image-link-create"
+                placeholder="Insert image link"
+                value={item.imgURL}
+                name='imgURL'
+                required
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className='notes-container-create'>
+            <div className='notes-create'>Notes</div>
+            <textarea
+              className="textarea-notes-create"
+              value={item.notes}
+              name='notes'
+              onChange={handleChange}
+            />
+          </div>
+          <div className='button-container-create'>
+            <button type='submit' className="save-button">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
     </Layout>
     )
 }

@@ -1,27 +1,156 @@
 .item-edit {
-
+  display: grid;
+  width: 70%;
+  column-gap: 50px;
+  margin: 4% 20% 5% 15%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: stretch;
+  letter-spacing: 0.05rem;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
 }
-.image-container {
-
+.item-image-container-edit{
+  justify-self: end;
 }
-.edit-item-image {
-
+.item-image-edit {
+  width: 290px;
 }
-.edit-input-image-link {
-
+.item-container-edit {
+  display: grid;
+  width: 90%;
 }
-.edit-form {
-
+.form-edit {
+  display: grid;
 }
-.input-name {
-
+.name-container-edit,
+.category-container-edit,
+.season-container-edit,
+.color-container-edit,
+.image-container-edit,
+.imageURL-container-edit,
+.notes-container-edit {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-.input-price {
-
+.name-edit,
+.category-edit,
+.season-edit,
+.color-edit,
+.imageURL-edit,
+.notes-edit {
+  display: inline-block;
+  font-weight: 600;
 }
-.textarea-description {
-
+.name-input-edit,
+.category-input-edit,
+.season-input-edit,
+.color-input-edit,
+.imageURL-input-edit {
+  min-height: 5vh;
+  min-width: 15vw;
+  border: 1px lightgrey solid;
 }
-.save-button {
-  
+.name-input-edit{
+  text-transform: capitalize;
+}
+.category-input-edit{
+  background-color: white;
+}
+.notes-container-edit {
+  min-width: 290px;
+  align-items: stretch;
+}
+.textarea-notes-edit {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: 100%;
+  border: 1px lightgrey solid;
+}
+.buttons-edit {
+  display: flex;
+  justify-self: center;
+}
+.save-button-edit,
+.delete-button-edit {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 8%;
+  box-shadow: 3px 3px 8px grey;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+.save-button-edit{
+  padding: 0.2rem 67px;
+}
+.delete-button-edit{
+  padding: 0.2rem 60px;
+  margin-left: 12%;
+}
+.buttons-edit a:visited,
+.buttons-edit a:hover,
+.buttons-edit a,
+.buttons-edit a:active {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .item-edit {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 29%;
+  }
+  .item-image-container-edit {
+    margin-top: 10%;
+  }
+  .item-image-edit  {
+    width: 170px;
+    margin-left: 103px;
+    margin-bottom: 20px;
+  }
+  .item-container-edit {
+    display: grid;
+    width: 230px;
+  }
+  .form-edit{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+  }
+  .name-container-edit,
+  .category-container-edit,
+  .season-container-edit,
+  .color-container-edit,
+  .imageURL-container-edit,
+  .notes-container-edit {
+    width: 73%;
+    display: grid;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .notes-container-edit {
+    min-width: 170px;
+  }
+  .imageURL-edit {
+    margin-right: 20px;    
+  }
+  .buttons-edit {
+    padding: 0px 45px;
+  }
+  .save-button-edit {
+    padding: 0.2rem 45px;
+  }
+  .delete-button-edit {
+    padding: 0.2rem 40px;
+  }
 }
