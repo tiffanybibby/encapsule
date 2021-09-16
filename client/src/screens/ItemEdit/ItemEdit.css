@@ -1,7 +1,6 @@
 .item-edit {
   display: grid;
   width: 70%;
-  /* max-height: 62vh; */
   column-gap: 50px;
   margin: 4% 20% 5% 15%;
   grid-template-columns: repeat(2, 1fr);
@@ -108,7 +107,6 @@
     min-height: 85vh;
     justify-content: center;
     margin: 0;
-    /* margin-top: 5%; */
     margin-bottom: 29%;
   }
   .item-image-container-edit {
@@ -116,17 +114,17 @@
   }
   .item-image-edit  {
     width: 170px;
-    margin-left: 90px;
+    margin-left: 103px;
     margin-bottom: 20px;
   }
   .item-container-edit {
     display: grid;
-    width: 450px;
+    width: 230px;
   }
   .form-edit{
     display: flex;
     flex-direction: column;
-    min-width: 170px;
+    min-width: 100vw;
   }
   .name-container-edit,
   .category-container-edit,
@@ -134,10 +132,11 @@
   .color-container-edit,
   .imageURL-container-edit,
   .notes-container-edit {
-    width: 55%;
+    width: 73%;
     display: grid;
     margin-left: 50px;
     margin-top: 10px;
+    margin-right: 0;
   }
   .notes-container-edit {
     min-width: 170px;
@@ -146,7 +145,7 @@
     margin-right: 20px;    
   }
   .buttons-edit {
-    padding: 0px 30px;
+    padding: 0px 45px;
   }
   .save-button-edit {
     padding: 0.2rem 45px;
