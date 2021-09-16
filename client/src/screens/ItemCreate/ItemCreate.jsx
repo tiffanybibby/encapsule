@@ -40,10 +40,10 @@ if (isCreated) {
       <div className='item-create'>
         <form className="form-create" onSubmit={handleSubmit}>
           <div className='item-container-create'>
-            <div className='name-container-create'>
-              <div className='name-create'>Name</div>
+            <div className='container-create'>
+              <div className='div-create'>Name</div>
               <input
-                className="name-input-create"
+                className="input-create"
                 value={item.name}
                 name='name'
                 required
@@ -51,10 +51,10 @@ if (isCreated) {
                 onChange={handleChange}
               />
             </div>
-            <div className='category-container-create'>
-              <div className='category-create'>Category</div>
+            <div className='container-create'>
+              <div className='div-create'>Category</div>
               <select
-                className="category-input-create"
+                className="input-create"
                 placeholder='Category'
                 value={item.category}
                 name='category'
@@ -68,20 +68,20 @@ if (isCreated) {
                 <option value='dresses'>Dresses</option>
               </select>
             </div>
-            <div className='season-container-create'>
-              <div className='season-create'>Season</div>
+            <div className='container-create'>
+              <div className='div-create'>Season</div>
               <input
-                className="season-input-create"
+                className="input-create"
                 value={item.season}
                 name='season'
                 required
                 onChange={handleChange}
               />
             </div>
-            <div className='color-container-create'>
-              <div className='color-create'>Color</div>
+            <div className='container-create'>
+              <div className='div-create'>Color</div>
               <input
-                className="color-input-create"
+                className="input-create"
                 value={item.color}
                 name='color'
                 required
@@ -89,10 +89,10 @@ if (isCreated) {
                 onChange={handleChange}
               />
               </div>
-            <div className='image-container-create'>
-              <div className='image-create'>Upload Image</div>
+            <div className='container-create'>
+              <div className='div-create'>Upload Image</div>
               <input
-                className="image-link-create"
+                className="input-create"
                 placeholder="Insert image link"
                 value={item.imgURL}
                 name='imgURL'
@@ -102,7 +102,7 @@ if (isCreated) {
             </div>
           </div>
           <div className='notes-container-create'>
-            <div className='notes-create'>Notes</div>
+            <div className='div-create'>Notes</div>
             <textarea
               className="textarea-notes-create"
               value={item.notes}

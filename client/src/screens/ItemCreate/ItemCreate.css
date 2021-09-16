@@ -4,7 +4,10 @@
   align-items: stretch;
   justify-content: center;
   max-height: 62vh;
-  margin: 4% 20% 4% 15%;
+  margin: 1% 20% 4% 15%;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05rem;
 }
 .form-create {
   display: grid;
@@ -14,36 +17,20 @@
 }
 .item-container-create {
   justify-self: end;
-  font-family: "Catamaran", sans-serif;
-  font-size: 15px;
 }
-.name-container-create,
-.category-container-create,
-.season-container-create,
-.color-container-create,
-.image-container-create {
+.container-create {
   min-height: 5vh;
 }
-.name-create,
-.category-create,
-.season-create,
-.color-create,
-.image-create {
+.div-create {
   font-weight: 600;
 }
-.name-input-create,
-.category-input-create,
-.season-input-create,
-.color-input-create,
-.image-link-create {
+.input-create {
   min-width: 15vw;
   width: 210px;
   border: 1px lightgrey solid;
   background-color: white;
   margin-bottom: 10px;
   min-height: 5vh;
-}
-.category-input-create{
   color: grey;
 }
 .notes-container-create {
@@ -53,9 +40,6 @@
   flex-direction: column;
   align-items: flex-start;
   height: 97%;
-}
-.notes-create {
-  font-weight: 600;
 }
 .textarea-notes-create {
   word-wrap: break-word;
@@ -89,7 +73,7 @@
 @media (max-width: 500px) {
   .item-create {
     flex-direction: column;
-     display: flex;
+    display: flex;
     min-height: 70vh;
   }
   .form-create{
