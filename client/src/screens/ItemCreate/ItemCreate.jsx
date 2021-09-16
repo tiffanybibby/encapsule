@@ -11,15 +11,16 @@ const ItemCreate = (props) => {
     name: '',
     imgURL: '',
     category: '',
-    season: [],
+    season: '',
     color: '',
     notes: ''
 })
-  // const [selectedSeason, setSelectedSeason] = useState(""); 
+  // const [selectedSeason, getSelectedSeason] = useState('')
   const [isCreated, setCreated] = useState(false)
 
   const handleChange = (e) => {
     console.log(props)
+    console.log(e.target.value)
     const { name, value } = e.target
       setItem({
         ...item,
@@ -117,8 +118,9 @@ if (isCreated) {
             />
           </div>
           <br/>
-          <div><SeasonDropDown value={item.season} onChange={handleChange}
-          ></SeasonDropDown></div>
+          <div>
+            <SeasonDropDown value={item.season} onChange={handleChange}></SeasonDropDown>
+          </div>
           <div className='button-container'>
             <button type='submit' className="submit-button">
               Submit

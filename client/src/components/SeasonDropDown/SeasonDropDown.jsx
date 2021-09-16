@@ -1,8 +1,20 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
 
-const animatedComponents = makeAnimated();
+export default function SeasonDropDown(props) {
+
+  const animatedComponents = makeAnimated();
+
+const [selectedSeason, setSelectedSeason] = useState('')
+
+const handleSeason = (e) => {
+  console.log(props)
+  console.log(e.target.value)
+  if (e.target.value) {
+    setSelectedSeason(e.target.value)
+  }
+}
 const options= [
   { value: 'summer', label: 'Summer' },
   { value: 'spring', label: 'Spring' },
@@ -10,7 +22,6 @@ const options= [
   { value: 'winter', label: 'Winter' }
 ]
 
-export default function SeasonDropDown() {
   return (
 
     <Select
@@ -21,6 +32,8 @@ export default function SeasonDropDown() {
       isMulti
       options={options}
       multiple
+      value={selectedSeason}
+      onChange={handleSeason}
     />
   )
 }
