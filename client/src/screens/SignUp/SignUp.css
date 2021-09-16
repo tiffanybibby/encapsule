@@ -59,3 +59,25 @@
   align-self: center;
   cursor: pointer;
 }
+.danger {
+  color: red;
+}
+
+@media (max-width: 500px) {
+  .sign-up {
+    flex-direction: column;
+    width: auto;
+    margin: 10% 8%;
+  }
+  .left-column {
+    margin: 0;
+  }
+  .signup-headline {
+    font-size: 24px;
+    margin: 24px 0 10px;
+  }
+  .signup-caption {
+    font-size: 18px;
+    margin: 0 0 24px;
+  }
+}
