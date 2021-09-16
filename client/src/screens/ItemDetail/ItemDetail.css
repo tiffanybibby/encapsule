@@ -1,7 +1,11 @@
 .item-detail-image {
   width: 290px;
-  margin-left: 10%;
-  margin-top: 4%;
+  margin-left: 15%;
+  margin-top: 13%;
+}
+
+.detail-no-button {
+  margin-left: 11%;
 }
 
 .detail {
@@ -12,7 +16,7 @@
 .item-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 2% 20% 2% 15%;
+  margin: 0% 20% 5% 15%;
   max-height: 62vh;
   align-content: space-around;
   width: 70%;
@@ -22,6 +26,7 @@
 
 .item-detail-div {
   font-weight: 600;
+  display: flex;
 }
 
 .edit-button,
@@ -41,9 +46,12 @@
 }
 
 .edit-button {
-  border: none;
-  padding: 0.4rem 67px;
-  font-size: 12px;
+  padding: 0.2rem 67px;
+}
+
+.delete-button {
+  padding: 0.2rem 60px;
+  margin-left: 12%;
 }
 
 .button-container a:visited,
@@ -66,7 +74,7 @@
   inline-size: 180px;
   overflow-wrap: break-word;
   height: 150px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .name,
@@ -122,4 +130,3 @@
     overflow: scroll;
   }
 }
-
