@@ -88,25 +88,35 @@
 }
 @media (max-width: 500px) {
   .item-create {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 10% 0 0 0;
+     display: flex;
     min-height: 70vh;
   }
-  .item-container-create {
-  height: 100%;
+  .form-create{
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
   }
-  .name-container-create,
-  .category-container-create,
-  .season-container-create,
-  .color-container-create,
-  .notes-container-create,
-  .image-container-create {
-    display: grid;
-    min-height: 5vh;
-    max-width: 70vw;
-    margin-left: 12%;
+  .item-container-create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .notes-container-create{
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textarea-notes-create{
+    width: 80%;
+    height: 150px;
+  }
+  .notes-create{
+    font-weight: 600;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 27px;
   }
   .button-container-create {
     padding: 0.2rem 45px;
