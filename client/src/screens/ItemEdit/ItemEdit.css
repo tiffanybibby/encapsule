@@ -50,7 +50,7 @@
 .color-input-edit,
 .imageURL-input-edit {
   min-height: 5vh;
-  min-width: 10vw;
+  min-width: 15vw;
 }
 .notes-container-edit {
   min-width: 290px;
@@ -76,21 +76,23 @@
   padding: 0.4rem 50px;
   
 }
-.button-container a:visited,
-.button-container a:hover,
-.button-container a,
-.button-container a:active {
+.buttons-edit a:visited,
+.buttons-edit a:hover,
+.buttons-edit a,
+.buttons-edit a:active {
   text-decoration: none;
 }
 
 @media (max-width: 500px) {
-  .notes-container-create  {
-    width: 170px;
+  .item-edit {
+    width: 100%;
+    flex-direction: column;
+    min-height: 70vh;
   }
-  .item-create {
+  .item-image-container-edit  {
     width: 100%;
   }
-  .item-container-create {
+  .item-container-edit {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -98,22 +100,17 @@
     justify-content: center;
     align-content: stretch;
   }
-  .name-container,
-  .category-container,
-  .season-container,
-  .color-container {
+  .name-container-edit,
+  .category-container-edit,
+  .season-container-edit,
+  .color-container-edit,
+  .imageURL-container-edit,
+  .notes-container-edit {
     display: grid;
-    min-height: 5vh;
     max-width: 70vw;
-    margin-left: 12%;
   }
-  .button-create {
+  .buttons-edit {
     padding: 0.2rem 45px;
     margin-top: 3%;
-    margin-left: 11%;
-  }
-  .save-button {
-    padding: 0.2rem 45px;
-    margin: 0;
   }
 }
