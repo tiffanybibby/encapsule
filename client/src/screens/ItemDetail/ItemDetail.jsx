@@ -35,7 +35,7 @@ const ItemDetail = (props) => {
         <div className='detail'>
           <div className='detail-no-button'>
             <div className='name-container'>
-              <div className='name-div'>Name</div>
+            <div className='name-div'>Name</div>
               <div className='name'>{item.name}</div>
             </div>
             <div className='category-container'>
