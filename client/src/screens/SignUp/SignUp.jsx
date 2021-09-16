@@ -53,10 +53,10 @@ const SignUp = (props) => {
     if (form.isError) {
       return (
         <>
+          <p className={toggleForm}>{form.errorMsg}</p>
           <button className="signup-button" type="submit">
             Sign Up
           </button>
-          <p className={toggleForm}>{form.errorMsg}</p>
         </>
       );
     } else {

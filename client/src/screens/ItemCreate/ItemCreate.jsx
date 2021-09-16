@@ -44,7 +44,6 @@ if (isCreated) {
               <div className='name-create'>Name</div>
               <input
                 className="name-input-create"
-                placeholder='Name'
                 value={item.name}
                 name='name'
                 required
@@ -62,7 +61,7 @@ if (isCreated) {
                 required
                 onChange={handleChange}
               >
-                <option value='' defaultValue>Choose category</option>
+                <option value='' defaultValue>Select</option>
                 <option value='tops'>Tops</option>
                 <option value='skirts'>Skirts</option>
                 <option value='pants'>Pants</option>
@@ -73,7 +72,6 @@ if (isCreated) {
               <div className='season-create'>Season</div>
               <input
                 className="season-input-create"
-                placeholder='Season'
                 value={item.season}
                 name='season'
                 required
@@ -84,7 +82,6 @@ if (isCreated) {
               <div className='color-create'>Color</div>
               <input
                 className="color-input-create"
-                placeholder='Color'
                 value={item.color}
                 name='color'
                 required
@@ -93,10 +90,10 @@ if (isCreated) {
               />
               </div>
             <div className='image-container-create'>
-              <div className='image-create'>Change Image Link</div>
+              <div className='image-create'>Upload Image</div>
               <input
                 className="image-link-create"
-                placeholder='Add image link'
+                placeholder="Insert image link"
                 value={item.imgURL}
                 name='imgURL'
                 required
@@ -108,7 +105,6 @@ if (isCreated) {
             <div className='notes-create'>Notes</div>
             <textarea
               className="textarea-notes-create"
-              placeholder='Notes'
               value={item.notes}
               name='notes'
               onChange={handleChange}
