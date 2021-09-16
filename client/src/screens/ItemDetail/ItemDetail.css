@@ -1,24 +1,24 @@
+.item-detail-image {
+  width: 290px;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.detail {
+  margin-left: 0;
+  margin-top: 17%;
+}
+
 .item-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0% 20% 5% 15%;
+  margin: 2% 20% 2% 15%;
   max-height: 62vh;
   align-content: space-around;
   width: 70%;
   font-family: "Catamaran", sans-serif;
 }
-.item-detail-image {
-  width: 290px;
-  margin-left: 15%;
-  margin-top: 13%;
-}
-.detail {
-  margin-left: 0;
-  margin-top: 17%;
-}
-.detail-no-button {
-  margin-left: 11%;
-}
+
 .name-div,
 .category-div,
 .season-div,
@@ -26,7 +26,6 @@
 .notes-div,
 .notes-div {
   font-weight: 600;
-  display: flex;
 }
 
 .edit-button,
@@ -39,19 +38,12 @@
   border-radius: 15px;
   text-align: center;
   margin-top: 22%;
-  box-shadow: 3px 3px 8px grey;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
 }
 
 .edit-button {
-  padding: 0.2rem 67px;
-}
-
-.delete-button {
-  padding: 0.2rem 60px;
-  margin-left: 12%;
+  border: none;
+  padding: 0.4rem 67px;
+  font-size: 12px;
 }
 
 .button-container a:visited,
@@ -60,6 +52,13 @@
 .button-container a:active {
   text-decoration: none;
   color: white;
+}
+
+.delete-button {
+  border: none;
+  padding: 0.4rem 60px;
+  margin-left: 12%;
+  font-size: 12px;
 }
 
 .name-container,
@@ -71,63 +70,10 @@
   grid-template-columns: 1fr 2fr;
   min-height: 5vh;
   max-width: 30vw;
-  border: 1px solid sienna;
 }
 
 .notes {
   word-wrap: break-word;
   inline-size: 170px;
   overflow-wrap: break-word;
-}
-
-.name,
-.color,
-.category {
-  text-transform: capitalize;
-}
-
-@media (max-width: 500px) {
-  .item-detail-image {
-    width: 170px;
-    margin-left: 25%;
-    margin-top: 0%;
-  }
-
-  .detail {
-    margin-left: 0;
-    margin-top: 3%;
-    width: 100%;
-  }
-
-  .item-detail {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    min-height: 74vh;
-    justify-content: center;
-    align-content: stretch;
-  }
-
-  .name-container,
-  .category-container,
-  .season-container,
-  .color-container,
-  .notes-container {
-    display: grid;
-    min-height: 5vh;
-    max-width: 70vw;
-    margin-left: 12%;
-  }
-
-  .edit-button {
-    padding: 0.2rem 45px;
-    margin-top: 3%;
-    margin-left: 11%;
-  }
-
-  .delete-button {
-    padding: 0.2rem 40px;
-    margin-top: 3%;
-  }
 }

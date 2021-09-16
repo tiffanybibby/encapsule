@@ -107,7 +107,7 @@ if (isCreated) {
           <div className='notes-container-create'>
             <div className='notes-create'>Notes</div>
             <textarea
-              className="textarea-create-notes"
+              className="textarea-notes-create"
               // rows={10}
               placeholder='Notes'
               value={item.notes}

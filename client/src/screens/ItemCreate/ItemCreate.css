@@ -1,19 +1,24 @@
 .item-create {
   display: grid;
-  margin: 0% 20% 5% 15%;
-  max-height: 62vh;
-  align-content: space-around;
   width: 70%;
-  font-family: "Catamaran", sans-serif;
+  align-items: stretch;
+  justify-content: center;
+  max-height: 62vh;
+  margin: 4% 20% 2% 15%;
+  border: 1px dashed blue;
 }
 .form-create {
+  border: 1px solid green;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  margin: 6% 20% 2% 15%;
+  column-gap: 50px;
 }
 .item-container-create {
-  margin-left: 0px;
+  border: 1px solid rebeccapurple;
+  justify-self: end;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
 }
 .name-container-create,
 .category-container-create,
@@ -21,6 +26,7 @@
 .color-container-create,
 .image-container-create {
   min-height: 5vh;
+  border: 1px solid indianred;
 }
 .name-create,
 .category-create,
@@ -29,42 +35,39 @@
 .image-create,
 .notes-create {
   font-weight: 600;
+  border: 1px solid khaki;
 }
 .name-input-create,
 .category-input-create,
 .season-input-create,
 .color-input-create,
 .image-link-create {
-  font-family: Catamaran;
-  width: 20vw;
+  min-width: 10vw;
+  border: 1px solid hotpink;
 }
 .notes-container-create {
   min-width: 290px;
-  margin-left: 20%;
-  /* grid-row: span 6 / auto; */
+  align-items: stretch;
+  border: 1px solid silver;
 }
-.textarea-create-notes {
-  height: 90%;
+.textarea-notes-create {
   word-wrap: break-word;
-  inline-size: 170px;
   overflow-wrap: break-word;
-  width: 100%;
+  justify-self: stretch;
 }
 .save-button {
-  padding: 10px;
+  margin: 5px;
   color: white;
   background-color: black;
-  margin: 0;
-  /* width: 100px; */
   border-radius: 15px;
   text-align: center;
-  margin-top: 22%;
-  font-size: 14px;
-  padding: 0.4rem 67px;
+  font-size: 12px;
+  padding: 0.4rem 50px;
 }
 .button-container-create {
   grid-column: span 2 / auto;
   margin: auto;
+  border: 1px solid tomato;
 }
 .button-container-create a:visited,
 .button-container-create a:hover,
@@ -84,7 +87,6 @@
     flex-direction: column;
     width: 100%;
     margin: 0;
-    /* min-height: 74vh; */
     justify-content: center;
     align-content: stretch;
   }
@@ -105,6 +107,5 @@
   .save-button {
     padding: 0.2rem 45px;
     margin: 0;
-    border: 1px solid saddlebrown;
   }
 }
