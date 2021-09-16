@@ -8,8 +8,8 @@ const Items = (props) => {
     <Layout user={props.user}>
       { props.user ? <ItemCards /> :
         <>
-          <p className="awkward">Well, this is awkward...</p>
-          <p className="no-closet"> Your closet is empty {':('}</p>
+            <p className="awkward">Well, this is awkward...</p>
+            <p className="no-closet"> Your closet is empty {':('}</p>
           <br />
           <div className="funny-gifs">
             <img className="gif-1" src="https://media0.giphy.com/media/3ohfFucMqPjwFq5f7W/giphy.gif" alt="clueless" />
