@@ -107,7 +107,7 @@ if (isCreated) {
           <div className='notes-container-create'>
             <div className='notes-create'>Notes</div>
             <textarea
-              className="textarea-create-notes"
+              className="textarea-notes-create"
               // rows={10}
               placeholder='Notes'
               value={item.notes}
@@ -115,9 +115,9 @@ if (isCreated) {
               onChange={handleChange}
             />
           </div>
-          <div className='button-container'>
-            <button type='submit' className="submit-button">
-              Submit
+          <div className='button-container-create'>
+            <button type='submit' className="save-button">
+              Save
             </button>
           </div>
         </form>
