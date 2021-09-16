@@ -1,12 +1,14 @@
 .item-edit {
   display: grid;
   width: 70%;
-  max-height: 62vh;
   column-gap: 50px;
-  margin: 4% 20% 2% 15%;
+  margin: 4% 20% 5% 15%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: stretch;
+  letter-spacing: 0.05rem;
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
 }
 .item-image-container-edit{
   justify-self: end;
@@ -17,13 +19,9 @@
 .item-container-edit {
   display: grid;
   width: 90%;
-  font-family: "Catamaran", sans-serif;
-  font-size: 15px;
-  justify-self: start;
 }
 .form-edit {
   display: grid;
-  align-content: space-between;
 }
 .name-container-edit,
 .category-container-edit,
@@ -50,7 +48,14 @@
 .color-input-edit,
 .imageURL-input-edit {
   min-height: 5vh;
-  min-width: 10vw;
+  min-width: 15vw;
+  border: 1px lightgrey solid;
+}
+.name-input-edit{
+  text-transform: capitalize;
+}
+.category-input-edit{
+  background-color: white;
 }
 .notes-container-edit {
   min-width: 290px;
@@ -60,60 +65,92 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   height: 100%;
+  border: 1px lightgrey solid;
 }
 .buttons-edit {
-  display: inline-block;
+  display: flex;
   justify-self: center;
 }
 .save-button-edit,
 .delete-button-edit {
-  margin: 5px;
+  display: inline-block;
+  padding: 10px;
   color: white;
   background-color: black;
+  margin: 0;
   border-radius: 15px;
   text-align: center;
-  font-size: 12px;
-  padding: 0.4rem 50px;
-  
+  margin-top: 8%;
+  box-shadow: 3px 3px 8px grey;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
 }
-.button-container a:visited,
-.button-container a:hover,
-.button-container a,
-.button-container a:active {
+.save-button-edit{
+  padding: 0.2rem 67px;
+}
+.delete-button-edit{
+  padding: 0.2rem 60px;
+  margin-left: 12%;
+}
+.buttons-edit a:visited,
+.buttons-edit a:hover,
+.buttons-edit a,
+.buttons-edit a:active {
   text-decoration: none;
 }
 
 @media (max-width: 500px) {
-  .notes-container-create  {
-    width: 170px;
-  }
-  .item-create {
-    width: 100%;
-  }
-  .item-container-create {
+  .item-edit {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0;
+    min-height: 85vh;
     justify-content: center;
-    align-content: stretch;
-  }
-  .name-container,
-  .category-container,
-  .season-container,
-  .color-container {
-    display: grid;
-    min-height: 5vh;
-    max-width: 70vw;
-    margin-left: 12%;
-  }
-  .button-create {
-    padding: 0.2rem 45px;
-    margin-top: 3%;
-    margin-left: 11%;
-  }
-  .save-button {
-    padding: 0.2rem 45px;
     margin: 0;
+    margin-bottom: 29%;
+  }
+  .item-image-container-edit {
+    margin-top: 10%;
+  }
+  .item-image-edit  {
+    width: 170px;
+    margin-left: 103px;
+    margin-bottom: 20px;
+  }
+  .item-container-edit {
+    display: grid;
+    width: 230px;
+  }
+  .form-edit{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+  }
+  .name-container-edit,
+  .category-container-edit,
+  .season-container-edit,
+  .color-container-edit,
+  .imageURL-container-edit,
+  .notes-container-edit {
+    width: 73%;
+    display: grid;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .notes-container-edit {
+    min-width: 170px;
+  }
+  .imageURL-edit {
+    margin-right: 20px;    
+  }
+  .buttons-edit {
+    padding: 0px 45px;
+  }
+  .save-button-edit {
+    padding: 0.2rem 45px;
+  }
+  .delete-button-edit {
+    padding: 0.2rem 40px;
   }
 }

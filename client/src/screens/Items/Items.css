@@ -1,16 +1,13 @@
-.push {
-  height: 3vw;
-}
 .awkward {
   font-family: "Catamaran";
-  font-size: 30px;
-  margin: 45px;
+  font-size: 22px;
+  margin: 45px 45px 45px 205px;
   font-weight: normal;
 }
 
 .no-closet {
   font-family: "Catamaran";
-  font-size: 30px;
+  font-size: 24px;
   margin: 45px;
   font-weight: normal;
   text-align: center;
@@ -20,6 +17,8 @@
 .funny-gifs {
   display: flex;
   justify-content: center;
+  margin: auto;
+  width: 70%;
 }
 
 .gif-1,
@@ -28,6 +27,7 @@
   width: 300px;
   height: auto;
   border-radius: 25px;
+  padding: 0 10px
 }
 
 .no-closet-sell {
@@ -35,7 +35,7 @@ color: #6AA6A3;
 font-family: "Poiret One";
 font-weight: bold;
 text-align: center;
-font-size: 22px;
+font-size: 30px;
 letter-spacing: 2px;
 margin: 20px;
 }
@@ -67,6 +67,7 @@ color: #6AA6A3;
   .gif-3 {
   width: 30vw;
   border-radius: 25px;
+  padding: 0 2px;
 }
 .push {
   height: 48vw;

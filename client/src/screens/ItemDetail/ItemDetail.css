@@ -130,3 +130,18 @@
     overflow: scroll;
   }
 }
+
+@media (min-width: 1350px) {
+  .notes::-webkit-scrollbar {
+    display: none;
+  }
+
+  .notes {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .item-detail {
+    min-height: 65vh;
+  }
+}

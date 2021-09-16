@@ -4,7 +4,7 @@
   align-items: stretch;
   justify-content: center;
   max-height: 62vh;
-  margin: 4% 20% 2% 15%;
+  margin: 4% 20% 4% 15%;
 }
 .form-create {
   display: grid;
@@ -28,8 +28,7 @@
 .category-create,
 .season-create,
 .color-create,
-.image-create,
-.notes-create {
+.image-create {
   font-weight: 600;
 }
 .name-input-create,
@@ -37,61 +36,89 @@
 .season-input-create,
 .color-input-create,
 .image-link-create {
-  min-width: 10vw;
+  min-width: 15vw;
+  width: 210px;
+  border: 1px lightgrey solid;
+  background-color: white;
+  margin-bottom: 10px;
+  min-height: 5vh;
+}
+.category-input-create{
+  color: grey;
 }
 .notes-container-create {
-  min-width: 290px;
   align-items: stretch;
+  min-width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 97%;
+}
+.notes-create {
+  font-weight: 600;
 }
 .textarea-notes-create {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  height: 100%;
   justify-self: stretch;
-}
-.save-button {
-  margin: 5px;
-  color: white;
-  background-color: black;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 12px;
-  padding: 0.4rem 50px;
+  width: 75%;
+  border: 1px lightgrey solid;
 }
 .button-container-create {
   grid-column: span 2 / auto;
   margin: auto;
 }
-.button-container-create a:visited,
-.button-container-create a:hover,
-.button-container-create a,
-.button-container-create a:active {
+.save-button {
+  margin: 8px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0.2rem 64px;
+  font-family: "Catamaran", sans-serif;
+  margin-top: 24px;
+}
+.save-button a:visited,
+.save-button a:hover,
+.save-button a,
+.save-button a:active {
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  .notes-container-create  {
-    width: 170px;
-  }
   .item-create {
-    width: 100%;
+    flex-direction: column;
+     display: flex;
+    min-height: 70vh;
   }
-  .item-container-create {
+  .form-create{
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .item-container-create{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    align-content: stretch;
+    align-items: center;
   }
-  .name-container,
-  .category-container,
-  .season-container,
-  .color-container {
-    display: grid;
-    min-height: 5vh;
-    max-width: 70vw;
-    margin-left: 12%;
+  .notes-container-create{
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .button-create {
+  .textarea-notes-create{
+    width: 80%;
+    height: 150px;
+  }
+  .notes-create{
+    font-weight: 600;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 27px;
+  }
+  .button-container-create {
     padding: 0.2rem 45px;
     margin-top: 3%;
     margin-left: 11%;
