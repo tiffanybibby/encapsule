@@ -49,7 +49,7 @@ const ItemEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className='item-edit'>
-        <div className='item-image-container-edit'>
+        <div className='image-container-edit'>
           <img
             className='item-image-edit'
             src={item.imgURL}
@@ -58,10 +58,10 @@ const ItemEdit = (props) => {
         </div>
         <div className='item-container-edit'>
           <form className='form-edit' onSubmit={handleSubmit}>
-            <div className='name-container-edit'>
-            <div className='name-edit'>Name</div>
+            <div className='container-edit'>
+            <div className='div-edit'>Name</div>
               <input
-                className='name-input-edit'
+                className='input-edit'
                 placeholder='Name'
                 value={item.name}
                 name='name'
@@ -70,10 +70,10 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className='category-container-edit'>
-            <div className='category-edit'>Category</div>
+            <div className='container-edit'>
+            <div className='div-edit'>Category</div>
               <select
-                className="category-input-edit"
+                className="input-edit"
                 placeholder='Category'
                 value={item.category}
                 name='category'
@@ -87,10 +87,10 @@ const ItemEdit = (props) => {
               <option value='dresses'>Dresses</option>
               </select>
             </div>
-            <div className='season-container-edit'>
-            <div className='season-edit'>Season</div>
+            <div className='container-edit'>
+            <div className='div-edit'>Season</div>
               <input
-                className="season-input-edit"
+                className="input-edit"
                 placeholder='Season'
                 value={item.season}
                 name='season'
@@ -98,8 +98,8 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className='color-container-edit'>
-            <div className='color-edit'>Color</div>
+            <div className='container-edit'>
+            <div className='div-edit'>Color</div>
               <input
                 className="color-input-edit"
                 placeholder='Color'
@@ -110,10 +110,10 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className='imageURL-container-edit'>
-            <div className='imageURL-edit'>Image Link</div>
+            <div className='container-edit'>
+            <div className='div-edit'>Image Link</div>
               <input
-                className="imageURL-input-edit"
+                className="input-edit"
                 placeholder='Change image link'
                 value={item.imgURL}
                 name='imgURL'
@@ -121,8 +121,8 @@ const ItemEdit = (props) => {
                 onChange={handleChange}
               />
         </div>
-        <div className='notes-container-edit'>
-            <div className='notes-edit'>Notes</div>
+        <div className='container-edit'>
+            <div className='div-edit'>Notes</div>
               <textarea
                 className='textarea-notes-edit'
                 placeholder='Notes'

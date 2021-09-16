@@ -10,7 +10,7 @@
   font-family: "Catamaran", sans-serif;
   font-size: 15px;
 }
-.item-image-container-edit{
+.image-container-edit{
   justify-self: end;
 }
 .item-image-edit {
@@ -22,31 +22,17 @@
 }
 .form-edit {
   display: grid;
+  align-content: space-between;
 }
-.name-container-edit,
-.category-container-edit,
-.season-container-edit,
-.color-container-edit,
-.image-container-edit,
-.imageURL-container-edit,
-.notes-container-edit {
+.container-edit {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-.name-edit,
-.category-edit,
-.season-edit,
-.color-edit,
-.imageURL-edit,
-.notes-edit {
+.div-edit {
   display: inline-block;
   font-weight: 600;
 }
-.name-input-edit,
-.category-input-edit,
-.season-input-edit,
-.color-input-edit,
-.imageURL-input-edit {
+.input-edit {
   min-height: 5vh;
   min-width: 15vw;
   border: 1px lightgrey solid;
@@ -126,12 +112,7 @@
     flex-direction: column;
     min-width: 100vw;
   }
-  .name-container-edit,
-  .category-container-edit,
-  .season-container-edit,
-  .color-container-edit,
-  .imageURL-container-edit,
-  .notes-container-edit {
+  .container-edit {
     width: 73%;
     display: grid;
     margin-left: 50px;
