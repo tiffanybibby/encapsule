@@ -5,17 +5,14 @@
   justify-content: center;
   max-height: 62vh;
   margin: 4% 20% 2% 15%;
-  border: 1px dashed blue;
 }
 .form-create {
-  border: 1px solid green;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   column-gap: 50px;
 }
 .item-container-create {
-  border: 1px solid rebeccapurple;
   justify-self: end;
   font-family: "Catamaran", sans-serif;
   font-size: 15px;
@@ -26,7 +23,6 @@
 .color-container-create,
 .image-container-create {
   min-height: 5vh;
-  border: 1px solid indianred;
 }
 .name-create,
 .category-create,
@@ -35,7 +31,6 @@
 .image-create,
 .notes-create {
   font-weight: 600;
-  border: 1px solid khaki;
 }
 .name-input-create,
 .category-input-create,
@@ -43,12 +38,10 @@
 .color-input-create,
 .image-link-create {
   min-width: 10vw;
-  border: 1px solid hotpink;
 }
 .notes-container-create {
   min-width: 290px;
   align-items: stretch;
-  border: 1px solid silver;
 }
 .textarea-notes-create {
   word-wrap: break-word;
@@ -67,7 +60,6 @@
 .button-container-create {
   grid-column: span 2 / auto;
   margin: auto;
-  border: 1px solid tomato;
 }
 .button-container-create a:visited,
 .button-container-create a:hover,
