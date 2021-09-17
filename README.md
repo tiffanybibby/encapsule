@@ -1,4 +1,4 @@
-# [enCapsule](https://github.com/tiffanybibby/encapsule)
+# [enCapsule](https://encapsule.netlify.app/)
 
 ## Group Members:
 ##### [Tiffany](https://github.com/tiffanybibby), [Nia-Emani](https://github.com/Nia-Emani), [Daria](https://github.com/DariaKrestina), & [Rachel](https://github.com/texasrachel)
