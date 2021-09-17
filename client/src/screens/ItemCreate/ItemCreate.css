@@ -1,11 +1,10 @@
 .item-create {
   display: grid;
-  font-family: "Catamaran", sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.05rem;
-  height: 75vh;
-  place-content: center;
-  align-content: space-evenly;
+  width: 70%;
+  align-items: stretch;
+  justify-content: center;
+  max-height: 62vh;
+  margin: 4% 20% 9% 15%;
 }
 .form-create {
   display: grid;

@@ -3,7 +3,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 66vh;
+  min-height: 70vh;
 }
 
 .sign-in-button {
