@@ -10,7 +10,7 @@
   font-family: "Catamaran", sans-serif;
   font-size: 15px;
 }
-.image-container-edit{
+.item-image-container-edit {
   justify-self: end;
 }
 .item-image-edit {
@@ -37,10 +37,10 @@
   /* min-width: 15vw; */
   border: 1px lightgrey solid;
 }
-.name-input-edit{
+.name-input-edit {
   text-transform: capitalize;
 }
-.category-input-edit{
+.category-input-edit {
   background-color: white;
 }
 .notes-container-edit {
@@ -72,12 +72,12 @@
   font-weight: 600;
   font-size: 14px;
 }
-.save-button-edit{
-  /* padding: 0.2rem 67px; */
+.save-button-edit {
+  padding: 0.2rem 67px;
 }
-.delete-button-edit{
-  /* padding: 0.2rem 60px; */
-  /* margin-left: 12%; */
+.delete-button-edit {
+  padding: 0.2rem 60px;
+  margin-left: 12%;
 }
 .buttons-edit a:visited,
 .buttons-edit a:hover,
@@ -99,7 +99,7 @@
     display: flex;
     justify-content: center;
   }
-  .item-image-edit  {
+  .item-image-edit {
     width: 170px;
   }
   .item-container-edit {
@@ -107,7 +107,7 @@
     /* justify-content: center; */
     /* width: 230px; */
   }
-  .form-edit{
+  .form-edit {
     display: flex;
     /* flex-direction: column; */
     /* min-width: 100vw; */
@@ -124,7 +124,7 @@
     /* min-width: 170px; */
   }
   .imageURL-edit {
-    /* margin-right: 20px;     */
+    margin-right: 20px;
   }
   .buttons-edit {
     /* padding: 0.2rem 45px; */
@@ -137,7 +137,10 @@
   }
   .delete-button-edit {
     padding: 0.2rem 40px;
-  } */
+  }
+  .textarea-notes-edit {
+    height: 150px;
+  }
 }
 @media (max-width: 1056px) {
   .buttons-edit {

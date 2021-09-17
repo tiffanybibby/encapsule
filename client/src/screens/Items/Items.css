@@ -51,6 +51,10 @@ color: #6AA6A3;
   color: #6AA6A3;
 }
 
+.push {
+  height: 6vw;
+}
+
 @media (max-width: 500px) {
   .awkward,
   .no-closet,
