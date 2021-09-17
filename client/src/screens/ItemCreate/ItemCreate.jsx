@@ -102,7 +102,7 @@ if (isCreated) {
             </div>
           </div>
           <div className='notes-container-create'>
-            <div className='div-create'>Notes</div>
+            <div className='div-notes-create'>Notes</div>
             <textarea
               className="textarea-notes-create"
               value={item.notes}
