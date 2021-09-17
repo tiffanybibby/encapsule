@@ -9,14 +9,13 @@
   font-size: 15px;
   letter-spacing: 0.05rem;
   box-sizing: border-box;
-  /* place-items: center; */
+  margin: 10px 0px;
   place-content: center;
   align-content: space-around;
 }
 .form-create {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
   column-gap: 50px;
 }
 .item-container-create {
@@ -44,7 +43,6 @@
   flex-direction: column;
   align-items: start;
   height: 97%;
-  /* border: 1px solid blue; */
 }
 .div-notes-create {
   align-items: flex-start;
@@ -55,25 +53,21 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   height: 100%;
-  /* justify-self: stretch; */
   width: 80%;
   border: 1px lightgrey solid;
 }
 .button-container-create {
   grid-column: span 2 / auto;
-  margin: auto;
-  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
 }
 .save-button {
-  /* margin: 8px; */
   color: white;
   background-color: black;
   border-radius: 15px;
-  /* text-align: center; */
   font-size: 14px;
   padding: 0.2rem 64px;
   font-family: "Catamaran", sans-serif;
-  margin-top: 24px;
 }
 .save-button a:visited,
 .save-button a:hover,
@@ -85,8 +79,6 @@
   .item-create {
     display: flex;
     flex-direction: column;
-    /* min-height: 70vh; */
-    /* margin-top: 10px; */
     box-sizing: border-box;
     align-items: center;
     justify-content: space-around;
@@ -94,7 +86,6 @@
   .form-create{
     display:flex;
     flex-direction: column;
-    /* margin-top: 30px; */
   }
   .item-container-create{
     display: flex;
@@ -103,16 +94,19 @@
     justify-self: center;
   }
   .notes-container-create{
-    /* border: 1px solid green; */
     min-width: auto;
     display: flex;
     flex-direction: column;
+    justify-content: self-start;
   }
   .div-notes-create {
     align-items: center;
   }
-  .textarea-notes-create{
+  .textarea-notes-create {
     width: 100%;
     height: 150px;
+  }
+  .button-container-create {
+    margin: 10px 0px;
   }
 }
