@@ -16,8 +16,7 @@
 .item-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0% 20% 5% 15%;
-  max-height: 62vh;
+  margin: 0% 20% 11% 15%;
   align-content: space-around;
   width: 70%;
   font-family: "Catamaran", sans-serif;
@@ -101,7 +100,7 @@
     flex-direction: column;
     width: 100%;
     margin: 10% 0 0 0;
-    min-height: 70vh;
+    min-height: 76vh;
   }
 
   .item-detail-container {
