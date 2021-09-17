@@ -101,7 +101,7 @@ const ItemEdit = (props) => {
             <div className='container-edit'>
             <div className='div-edit'>Color</div>
               <input
-                className="color-input-edit"
+                className="input-edit"
                 placeholder='Color'
                 value={item.color}
                 name='color'

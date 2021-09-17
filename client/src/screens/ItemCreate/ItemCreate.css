@@ -1,25 +1,21 @@
 .item-create {
   display: grid;
-  /* max-height: 62vh; */
-  /* width: 70%; */
-  /* align-items: stretch; */
-  /* justify-content: center; */
-  /* margin: 1% 20% 4% 15%; */
   font-family: "Catamaran", sans-serif;
   font-size: 15px;
   letter-spacing: 0.05rem;
-  box-sizing: border-box;
-  margin: 10px 0px;
+  height: 75vh;
   place-content: center;
-  align-content: space-around;
+  align-content: space-evenly;
 }
 .form-create {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 50px;
+  column-gap: 100px;
 }
 .item-container-create {
-  justify-self: end;
+  display: grid;
+  justify-content: end;
+  min-width: 290px;
 }
 .container-create {
   min-height: 5vh;
@@ -30,7 +26,7 @@
 }
 .input-create {
   min-width: 15vw;
-  width: 210px;
+  width: 230px;
   border: 1px lightgrey solid;
   background-color: white;
   margin-bottom: 10px;
@@ -79,7 +75,6 @@
   .item-create {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     align-items: center;
     justify-content: space-around;
   }
@@ -94,16 +89,16 @@
     justify-self: center;
   }
   .notes-container-create{
-    min-width: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: self-start;
+    align-content: center;
   }
   .div-notes-create {
     align-items: center;
   }
   .textarea-notes-create {
-    width: 100%;
+    align-self: center;
     height: 150px;
   }
   .button-container-create {

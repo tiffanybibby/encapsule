@@ -1,8 +1,6 @@
 .item-edit {
   display: grid;
-  width: 70%;
-  column-gap: 50px;
-  margin: 1% 20% 5% 15%;
+  column-gap: 150px;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: stretch;
@@ -18,7 +16,7 @@
 }
 .item-container-edit {
   display: grid;
-  width: 90%;
+  justify-self: start;
 }
 .form-edit {
   display: grid;
@@ -29,12 +27,12 @@
   grid-template-columns: 1fr 2fr;
 }
 .div-edit {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 600;
 }
 .input-edit {
-  min-height: 5vh;
-  min-width: 15vw;
+  /* min-height: 5vh; */
+  /* min-width: 15vw; */
   border: 1px lightgrey solid;
 }
 .name-input-edit{
@@ -44,8 +42,8 @@
   background-color: white;
 }
 .notes-container-edit {
-  min-width: 290px;
-  align-items: stretch;
+  /* min-width: 290px; */
+  /* align-items: stretch; */
 }
 .textarea-notes-edit {
   word-wrap: break-word;
@@ -55,7 +53,8 @@
 }
 .buttons-edit {
   display: flex;
-  justify-self: center;
+  flex-direction: row;
+  /* justify-self: center; */
 }
 .save-button-edit,
 .delete-button-edit {
@@ -65,19 +64,18 @@
   background-color: black;
   margin: 0;
   border-radius: 15px;
-  text-align: center;
-  margin-top: 8%;
+  /* margin-top: 8%; */
   box-shadow: 3px 3px 8px grey;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
 }
 .save-button-edit{
-  padding: 0.2rem 67px;
+  /* padding: 0.2rem 67px; */
 }
 .delete-button-edit{
-  padding: 0.2rem 60px;
-  margin-left: 12%;
+  /* padding: 0.2rem 60px; */
+  /* margin-left: 12%; */
 }
 .buttons-edit a:visited,
 .buttons-edit a:hover,
@@ -90,48 +88,58 @@
   .item-edit {
     display: flex;
     flex-direction: column;
-    min-height: 85vh;
+    /* min-height: 85vh; */
     justify-content: center;
-    margin: 0;
-    margin-bottom: 29%;
+    /* margin: 0; */
+    /* margin-bottom: 29%; */
   }
-  .item-image-container-edit {
-    margin-top: 10%;
+  .image-container-edit {
+    display: flex;
+    justify-content: center;
   }
   .item-image-edit  {
     width: 170px;
-    margin-left: 103px;
-    margin-bottom: 20px;
   }
   .item-container-edit {
-    display: grid;
-    width: 230px;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* width: 230px; */
   }
   .form-edit{
     display: flex;
-    flex-direction: column;
-    min-width: 100vw;
+    /* flex-direction: column; */
+    /* min-width: 100vw; */
+    /* justify-content: space-around; */
   }
   .container-edit {
-    width: 73%;
+    /* width: 73%; */
     display: grid;
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-right: 0;
+    /* margin-left: 50px; */
+    /* margin-top: 10px; */
+    /* margin-right: 0; */
   }
   .notes-container-edit {
-    min-width: 170px;
+    /* min-width: 170px; */
   }
   .imageURL-edit {
-    margin-right: 20px;    
+    /* margin-right: 20px;     */
   }
   .buttons-edit {
-    padding: 0px 45px;
+    /* padding: 0.2rem 45px; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* align-self: center; */
   }
-  .save-button-edit {
-    padding: 0.2rem 45px;
+  /* .save-button-edit {
+    padding: 0.2rem 40px;
   }
   .delete-button-edit {
     padding: 0.2rem 40px;
+  } */
+}
+@media (max-width: 1056px) {
+  .buttons-edit {
+    display: flex;
+    flex-direction: column;
   }
 }
