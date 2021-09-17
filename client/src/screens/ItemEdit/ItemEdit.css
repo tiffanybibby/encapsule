@@ -10,7 +10,7 @@
   font-family: "Catamaran", sans-serif;
   font-size: 15px;
 }
-.item-image-container-edit{
+.item-image-container-edit {
   justify-self: end;
 }
 .item-image-edit {
@@ -51,10 +51,10 @@
   min-width: 15vw;
   border: 1px lightgrey solid;
 }
-.name-input-edit{
+.name-input-edit {
   text-transform: capitalize;
 }
-.category-input-edit{
+.category-input-edit {
   background-color: white;
 }
 .notes-container-edit {
@@ -86,10 +86,10 @@
   font-weight: 600;
   font-size: 14px;
 }
-.save-button-edit{
+.save-button-edit {
   padding: 0.2rem 67px;
 }
-.delete-button-edit{
+.delete-button-edit {
   padding: 0.2rem 60px;
   margin-left: 12%;
 }
@@ -112,7 +112,7 @@
   .item-image-container-edit {
     margin-top: 10%;
   }
-  .item-image-edit  {
+  .item-image-edit {
     width: 170px;
     margin-left: 103px;
     margin-bottom: 20px;
@@ -121,7 +121,7 @@
     display: grid;
     width: 230px;
   }
-  .form-edit{
+  .form-edit {
     display: flex;
     flex-direction: column;
     min-width: 100vw;
@@ -142,7 +142,7 @@
     min-width: 170px;
   }
   .imageURL-edit {
-    margin-right: 20px;    
+    margin-right: 20px;
   }
   .buttons-edit {
     padding: 0px 45px;
@@ -152,5 +152,8 @@
   }
   .delete-button-edit {
     padding: 0.2rem 40px;
+  }
+  .textarea-notes-edit {
+    height: 150px;
   }
 }
